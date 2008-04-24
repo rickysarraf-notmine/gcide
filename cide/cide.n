@@ -15548,7 +15548,7 @@ To draw <qex>nutrition</qex>, propagate, and rot.</q> <rj><qau>Pope.</qau></rj><
 <p><sn>3.</sn> <fld>(Zool.)</fld> <def>A shell of the genus Nucula.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><cs><col><b>in a nutshell</b></col> <cd>in a summarized and very abbreviated form; -- of statments, descriptions, reports, and other communications; <as>as, to describe the convention <ex>in a nutshell</ex></as>.</cd> -- <mcol><col><b>To be in a nutshell</b></col> <it>or</it> <col><b>To lie in a nutshell</b></col>, <col><b></b></col></mcol>, <cd>to be within a small compass; to admit of very brief or simple determination or statement.</cd> <ldquo/The remedy <xex>lay in a nutshell</xex>.<rdquo/  <rj><au>Macaulay.</au></rj></cs><br/
+<p><cs><col><b>in a nutshell</b></col> <cd>in a summarized and very abbreviated form; -- of statments, descriptions, reports, and other communications; <as>as, to describe the convention <ex>in a nutshell</ex></as>.</cd> -- <mcol><col><b>To be in a nutshell</b></col> <it>or</it> <col><b>To lie in a nutshell</b></col>, </mcol>, <cd>to be within a small compass; to admit of very brief or simple determination or statement.</cd> <ldquo/The remedy <xex>lay in a nutshell</xex>.<rdquo/  <rj><au>Macaulay.</au></rj></cs><br/
 [<source>1913 Webster</source> <source>+PJC</source>]</p>
 
 <p><ent>Nutter</ent><br/

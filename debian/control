@@ -1,0 +1,30 @@
+Source: dict-gcide
+Section: text
+Priority: optional
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Standards-Version: 3.5.9.0
+Build-Depends-Indep: flex, bison, dictzip | dictd (<<1.7.1)
+
+Package: dict-gcide
+Architecture: all 
+Description: A Comprehensive English Dictionary
+ This package contains the GNU version of the Collaborative
+ International Dictionary of English, formatted for use by the
+ dictionary server in the dictd package.  The GCIDE contains the
+ full text of the 1913 Webster's Unabridged Dictionary, supplemented by
+ many definitions from WordNet, the Century Dictionary, 1906, and many
+ additional definitions contributed by volunteers.
+ .
+ The definitions in the core of this dictionary are at least 85 years
+ old, so they can not be expected to be politically correct by
+ contemporary standards, and no attempt has been, or will be, made to
+ make them so.
+ .
+ This package will be of limited use without the server found in the
+ dictd package, or another RFC 2229 compliant sever. 
+Depends: dictd | dict-server 
+Suggests: dict-wn
+Provides: dict-web1913, dictd-dictionary
+Replaces: dict-web1913
+Conflicts: dict-web1913 (<= 1.4-0.47pd-3)
+

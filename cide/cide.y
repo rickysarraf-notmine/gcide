@@ -422,10 +422,10 @@ In which she had a cock, hight chanticleer.</q> <rj><qau>Chaucer.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>2.</sn> <fld>(Naut.)</fld> <def>The portion of a yard{6} outboard of the slings, often called the <altname>outer quarter</altname>.</def><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><note>   A yard{6} is considered to have four unequal quarters,  two quarters extending from the mast to the slings on each side, and two smaller outer quarters outboard of the slings.</note><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><ent>Yardful</ent><br/
 <hw>Yard"ful</hw> <pr>(?)</pr>, <pos>n.</pos>; <plu><it>pl.</it> <plw>Yardfuls</plw> <pr>(<?/)</pr>.</plu> <def>As much as a yard will contain; enough to fill a yard.</def><br/
@@ -586,7 +586,7 @@ In which she had a cock, hight chanticleer.</q> <rj><qau>Chaucer.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>2.</sn> <def>A fore-and-aft-rigged vessel with two masts, a mainmast carrying a mainsail and jibs, taller than the mizzenmast and stepped a little farther forward than in a <contr>sloop</contr>, and with the mizzenmast, or jiggermast far aft, usually placed aft of the water line or aft the rudder post.  The mizzenmast of a yawl is smaller, and set further aft, than that of a <contr>sloop</contr>.</def><br/
-[<source>Webster 1913 Suppl.</source> <source>+RH</source>]</p>
+[<source>Webster 1913 Suppl.</source> <source>+RDH</source>]</p>
 
 <p><ent>Yawl</ent><br/
 <hw>Yawl</hw>, <pos>v. i.</pos> <ety>[OE. <ets><yogh/aulen</ets>, <ets><yogh/oulen</ets>, <ets>gaulen</ets>, <ets>goulen</ets>, Icel. <ets>gaula</ets> to low, bellow.  Cf. <er>Gowl</er>.]</ety> <def>To cry out like a dog or cat; to howl; to yell.</def>  <rj><au>Tennyson.</au></rj><br/

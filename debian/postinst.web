@@ -1,0 +1,6 @@
+#! /bin/sh
+set -e
+if ! grep -qs "^[[:space:]]*include [[:space:]]*/var/lib/dictd/db.list" /etc/dictd.conf /etc/dictd/dictd.conf 
+then
+        . /usr/share/debconf/confmodule
+fi

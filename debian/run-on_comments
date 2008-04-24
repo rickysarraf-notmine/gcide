@@ -1,0 +1,2 @@
+grep -vn "<--.*-->" ../cide/cide.t|grep "<--"|less
+

@@ -17297,7 +17297,7 @@ And to his mates thus in <qex>derision</qex> called.</q> <rj><qau>Milton.</qau><
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Descartes</ent><br/
-<hw>Descartes</hw> <pr>(d<asl/*k<aum/rt")</pr> <pos>prop. n.</pos> <def><person>Ren<eacute/ Descartes</person>, a French philosopher and mathematician, born 159, died 1650.  See biography, below.</def><br/
+<hw>Descartes</hw> <pr>(d<asl/*k<aum/rt")</pr> <pos>prop. n.</pos> <def><person>Ren<eacute/ Descartes</person>, a French philosopher and mathematician, born 1596, died 1650.  See biography, below.</def><br/
 <syn><b>Syn. --</b> Rene Descartes.</syn><br/
 [<source>WordNet 1.5</source>]</p>
 
@@ -26850,7 +26850,7 @@ That he moved the massy stone at length.</q> <rj><qau>Sir W. Scott.</qau></rj><b
 [<source>PJC</source>]</p>
 
 <p><q>A:  I'm not interested in diploids.<br/
-B: Oh, how I wish your parents had felt the same way!</q> <rj><qau></qau></rj></p>
+B: Oh, how I wish your parents had felt the same way!</q></p>
 
 <p><ent>diploid</ent><br/
 <hw>dip"loid</hw> <pr>(d<icr/p"loid)</pr>, <pos>a.</pos> <ety>[Gr. <grk>diplo`os</grk> twofold + <ets>-oid</ets>.]</ety> <fld>(Biol.)</fld> <def>having a number of chromosomes corresponding to two copies of each chromosome; having double the basic number of chromosomes, as seen in a haploid cell.  Contrasted to <contr>haploid</contr> and <contr>polyploid</contr>.</def> <note>in diploid cells, although the number of chromosomes is double that in haploid cells, it is not always true that there are two copies of every chromosome, since the two sex chromosomes in males will differ from each other.  In females, and for other chromosomes, however, there are generally two copies of each, giving rise to the classical hereditary and sorting patterns of Mendelian genetics.</note><br/

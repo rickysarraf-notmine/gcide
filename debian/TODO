@@ -1,0 +1,77 @@
+Message 84 in mail/dict-gcide 6/28/02:
+     The new version of WordNet corrects a number of definitions of
+geographic terms related to the Balkans.  (These corrections were
+submitted by a Croatian Debian user.)  Some of these definitions were
+included in the GCIDE supplements, and I suggest you correct them for
+the next release of GCIDE.  The corrected definitions that were used
+as supplements are:
+
+  Croatia
+       n : a republic in the western Balkans in south-central Europe
+in
+           the eastern Adriatic coastal area; formerly part of the
+           Habsburg monarchy and Yugoslavia; became independent in
+           1991 [syn: {Croatia}, {Republic of Croatia}, {Hrvatska}]
+
+  Macedonia
+       n 1: landlocked republic on the Balkan Peninsula; achieved
+            independence from Yugoslavia in 1991 [syn: {Macedonia}]
+       2: the ancient kingdom of Philip II and Alexander the Great in
+          the southeastern Balkans that is now divided among modern
+          Macedonia and Greece and Bulgaria [syn: {Macedon},
+{Macedonia},
+           {Makedonija}]
+
+     Definitions that were corrected in WordNet, but that hadn't been
+used in the supplementation, but that I suggest be added, are:
+
+  Slovenia
+       n : a mountainous republic in central Europe; formerly part of
+           the Habsburg monarchy and Yugoslavia; achieved
+           independence in 1991 [syn: {Slovenia}, {Republic of
+           Slovenia}, {Slovenija}]
+
+  Bosnia
+       n : a mountainous republic of south-central Europe; formerly
+           part of the Ottoman Empire and Yugoslavia; voted for
+           independence in 1992 but the mostly Serbian army of
+           Yugoslavia refused to accept the vote and began `ethnic
+           cleansing' to rid Bosnia of Croats and Muslims [syn:
+{Bosnia
+           and Herzegovina}, {Republic of Bosnia and Herzegovina},
+{Bosna
+           i Hercegovina}, {Bosnia-Herzegovina}, {Bosnia}]
+
+  Adriatic
+       n : an arm of the Mediterranean between Slovenia and Croatia
+and
+           Montenegro and Albania on the east and Italy on the west
+           [syn: {Adriatic}, {Adriatic Sea}]
+
+  Yugoslavia
+       n : a mountainous republic in southeastern Europe [syn:
+{Yugoslavia},
+            {Federal Republic of Yugoslavia}, {Jugoslavija}, {Serbia
+           and Montenegro}]
+
+  Montenegro
+       n : a former country bordering on the Adriatic Sea; now part of
+           Yugoslavia [syn: {Montenegro}, {Crna Gora}]
+
+     On Mon, 22 Apr 2002, Pat wrote:
+
+     I have been putting off the geographical definitions -- I'd like
+to get the CIA factbook data into a compressed format for this
+purpose.
+--
+
+
+FORMATTER:
+
+Accept nested tags
+
+Accept empty tags
+
+<note> tag should permit comments or new paragraphs within a note.
+
+Sort out pronunciation tags/entities

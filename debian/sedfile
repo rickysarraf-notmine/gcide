@@ -1,0 +1,60 @@
+# Here is a fix for a bug in the Carbonyl definition in the public
+# domain web1913_0.47-pd source.  In it (unlike the restrictive
+# license source), <sub><\sub> tags are placed around every number in
+# chemical formulas (<chform>).  In the definition of Carbonyl, this
+# is done to the 7 in the hex number \'b7 (representing a positive
+# charge), turning it into \'b<sub>7<\sub> which confuses webfilter.
+/^<p><hw>Car"bon\*yl</s/<\/\{0,1\}sub>//g
+#
+# There are half-a-dozen places where `amd' appears for `and' 
+# s/amd /and /g
+#
+# The entry for `Cross' in web1913.new.pd doesn't have the <def> 
+# or </def> tags
+# s/<hw>Cross<\/hw>, <i>v. t.<\/i> -- <col><b>To cross a check<\/b><\/col> <fld>(Eng. Banking)<\/fld>,/<hw>Cross<\/hw>, <i>v. t.<\/i> -- <col><b>To cross a check<\/b><\/col> <fld>(Eng. Banking)<\/fld>, <def>/
+# s/through the bank mentioned.<\/p>/through the bank mentioned.<\/def><\/p>/
+#
+# The entry for Brain is displayed for `dict case'
+# s/<col><b>case<\/b><\/col>, <cd>the bony on/<col><b>Brain case<\/b><\/col>, <cd>the bony or/
+#
+# The entry for Cruise misspells protection and `pirate'
+# s/potection/protection/
+# s/priate/pirate/
+#
+# The entry for Purlin mispells `roof'
+# s/root construction/roof construction/
+#
+#The definition for `nice' includes nimportant
+# s/nimportant/unimportant/
+
+#  All of the above seem to be fixed in the cide 0.43 sources, but
+# the Carbonyl fix isn't very good.
+# roof, in purlin, wasn't fixed in 0.44.  
+# fixed by RDH 6/2/01
+
+# Fix the cryptic source references to WordNet senses (wns=)
+s/wns=/WordNet sense /g
+
+# Remove page number comments
+s/<p><-- p. [0-9]* --><\/p>//g
+ 
+# Remove comments that are on one line
+s/<--.*-->//g
+
+# Change source references of RH to RDH
+s/\(<source>.*\)RH/\1RDH/g
+
+# Eliminate ASCII entry tags
+s/<p><ent>.*<\/ent><br\//<p>/g
+
+#  Use quotes instead of tags
+s/<ldquo\//"/g
+s/<\/rdquo\//"/g
+s/<rdquo\//"/g
+s/'bd\//"/g
+s/'b8\//"/g
+
+# Avoid extraneous ||'s
+s/||//g
+
+s/<eum\//\\'89/g

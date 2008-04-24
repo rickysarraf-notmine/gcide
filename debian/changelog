@@ -1,0 +1,277 @@
+dict-gcide (0.48-5) unstable; urgency=low
+
+  * QA Upload
+    + change maintainer to QA group
+    + acknowledge NMUs. Closes: #207859, #208393, #208394,
+      #224627, #263337, #341415, #391702, #441916.
+  * Provide dictd-dictionary. Closes: #466214.
+
+ -- Frank Lichtenheld <djpig@debian.org>  Thu, 24 Apr 2008 04:26:16 +0200
+
+dict-gcide (0.48-4.5) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * /etc/init.d/dictd sanity checks; closes: #441916.
+
+ -- Robert S. Edmonds <edmonds@debian.org>  Tue, 11 Sep 2007 16:54:42 -0400
+
+dict-gcide (0.48-4.4) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Use invoke-rc.d; closes: #341415.
+
+ -- Robert S. Edmonds <edmonds@debian.org>  Sun, 02 Sep 2007 01:42:10 -0400
+
+dict-gcide (0.48-4.3) unstable; urgency=low
+
+  * Non-maintainer upload to fix l10n issues
+  * Remove the useless debconf templates file. 
+    Closes: #207859, #208393, #208394, #224627
+
+ -- Christian Perrier <bubulle@debian.org>  Wed, 27 Sep 2006 20:40:11 +0200
+
+dict-gcide (0.48-4.1) unstable; urgency=low
+
+  * Non-maintainer upload.
+  * Apply patch from Andreas Jochens to allow building with
+    GCC 3.4 and 4.0, replacing the non-standard preprocessor
+    macro __FUNCTION__ with the C99 __func__ (Closes: #263337).
+  * debian/rules, debian/control: Remove statically-versioned
+    dict-web1913 transitional package.
+
+ -- Roger Leigh <rleigh@debian.org>  Tue, 19 Jul 2005 22:31:41 +0100
+
+dict-gcide (0.48-4) unstable; urgency=low
+
+  * Corrected format of Build-Depends-Indep: Closes: #218709
+
+ -- Bob Hilliard <hilliard@debian.org>  Sun, 02 Nov 2003 11:40:23 -0500
+
+  
+dict-gcide (0.48-3) unstable; urgency=low
+  
+  * Modified postinst.web and config to eliminate bashisms. Closes: 195074
+  
+  * Corrected typos in:
+    cide.s under Shark: s/baskin/basking/
+    cide.a under Antiperistasis: s/asquires/acquires/  Closes: #181564 
+  
+ -- Bob Hilliard <hilliard@debian.org>  Tue, 03 Jun 2003 17:46:12 -0400
+
+dict-gcide (0.48-2) unstable; urgency=low
+  
+  * Corrected error in postinst.web (s/||/&&/) so it checks for missing
+    include in /etc/dictd/dictd.conf.  Closes: #193335
+  
+  * Corrected typos:
+    cide.i - imperative, sn. 3 s/commund/command/
+    cide.s - sit sn. 5 s/sts/sits/
+  
+  * Added sn. 3 to `to sit out'.
+  
+  * Fixed an error in a comment that caused almost 3300 headwords to be
+    omitted.
+  
+  * Moved some extraneous files out of ../debian to reduce size of debian
+    diff.
+  
+ -- Bob Hilliard <hilliard@debian.org>  Sun, 18 May 2003 15:59:53 -0400
+  
+
+dict-gcide (0.48-1) unstable; urgency=low
+
+  * NOTE: For some unknow reason, 0.46-1 was never released.  Changes
+    mentioned in its changelog are incorporated in 0.48.
+    
+  * New upstream version.
+  
+  * Unzipped gnucide.zip, used dos2unix to convert all newlines, and
+    lower-cased file names.
+  
+  * Copied dict-gcide-0.46 directory (excluding ../debian) to
+    dict-gcide-0.48, replaced files in ../cide directory with 0.48 files,
+    and created dict-gcide_0.48.orig.tar.gz.
+
+  * Removed Depends: dict|dict-client; added Depends: dictd | dict-server
+    Closes: #153531
+
+  * This upstream version corrects typos in `flapjack' and `blancmange',
+    modifies the definitions of `dyslexia', and adds `mass' to definition
+    of `gram'.  Closes: #149727, #150641, #153602, #162381.
+
+  * Added `dictd<<1.7.1|dictzip' to Build-Depends-Indep.  Closes: #139185
+
+  * Fixed truncated birthdate of Descartes.  Closes: #176762
+
+  * Added entry for Condorcet.  Closes: #181682
+  
+  * Fixed typo in cide.s (s/Sharecopper/Sharecropper/)
+  
+  * Removed /usr/doc/ symlinks.
+
+ -- Bob Hilliard <hilliard@debian.org>  Sun, 11 May 2003 15:25:55 -0400
+
+
+dict-gcide (0.46-1) unstable; urgency=low
+  
+  * New upstream version.
+  
+  * Unzipped gnucide.zip, used dos2unix to convert all newlines, and
+    lower-cased file names.
+  
+  * Copied dict-gcide-0.44 directory (excluding ../debian) to
+    dict-gcide-0.46, replaced files in ../cide directory with 0.46 files,
+    and created dict-gcide_0.46.orig.tar.gz.
+    
+  * Added dictzip to Build-Depends-Indep
+  
+  * Added "export LC_ALL=C" to debian/rules to avoid sorting problems in
+    some locales.
+
+ -- Bob Hilliard <hilliard@debian.org>  Fri, 19 Apr 2002 17:52:52 -0400
+
+
+dict-gcide (0.44-2) unstable; urgency=low
+
+  * Inserted definitions of Adriatic, Bosnia, Croatia, Macedonia,
+    Montenegro, Slovenia, and Yugoslavia from WordNet 1.7 into gcide
+  
+  * Corrected spelling in debian/control (/suplemented/supplemented/). 
+    closes: #124549
+  
+  * Fixed collocations "Astronomical geography" and "Mathematical 
+    geography"; removed reference to non-existent .gif of the Geological
+    Series. 
+    closes: #120088
+  
+  * Removed interminable lists of examples of "un" words, changed
+    formatting so classes of such words that are and are not defined are
+    displayed when looking up "un"
+    closes: #109576
+  
+  * Removed all comments containing original page numbers - they break
+    things when they are embedded within another tag.
+
+  * Modified scan.l to show version and correct url for dict-gcide, and 
+    updated mailing address for the upstream editor.
+  
+  * Added debconf function to dict-web1913 to warn about need to
+    reconfigure if /etc/dictd.conf doesn't include ``include
+    /var/lib/dictd/db.list.''
+    closes: #104096
+  
+ -- Bob Hilliard <hilliard@debian.org>  Wed,  6 Mar 2002 18:05:10 -0500
+
+
+dict-gcide (0.44-1) unstable; urgency=low
+  *  First Debian release.  Since this is an extension of the dict-web1913
+    packages, the previous changelog has been incorporated for reference.
+    Closes: #100892  
+  
+  *  Copied the ../dict-web1913-1.4-0.47pd/ directory to
+    ../dict-gcide-0.44, replaced ../web1913_0.47-pd/ subdirectory to
+    ../cide/; unpacked gcide-0.44.tgz unto ../cide, and created
+    dict-gcide_0.44.orig.tar.gz. 
+  
+  *  Corrected numerous typos and tag errors, removed or commented out all
+    href references, and changed source tags from RH to RDH.  These
+    changes are in the files debian/diffs/diff-cide.? in the source
+    package. 
+    Closes: #65356
+  
+  *  gcide includes QED and luthier
+    Closes: #92662, #72429
+  
+  *  The use of the <or/ tag in collocations has been cleaned up,
+    eliminating numerous spurious definition returns.
+    Closes: #76327, #82734
+  
+ -- Bob Hilliard <hilliard@debian.org>  Wed,  6 Jun 2001 17:12:12 -0400
+  
+
+dict-web1913 (1.4-0.47pd-3) unstable; urgency=low
+
+  * Applied patch from Kirk Hilliard to scan.l and webfilter.l to eliminate
+    many run-on entries.  Thanks, Kirk.
+    Closes: #64808
+  
+  * Provided a sedscript to be run in Makefile to correct several
+    formatting problems and a number of typographical errors.
+    Closes: #64811
+  
+ -- Bob Hilliard <hilliard@debian.org>  Sun,  4 Jun 2000 17:12:37 -0400
+
+
+dict-web1913 (1.4-0.47pd-2) unstable; urgency=low
+
+  * Update to Standards version 3.0.1.1:
+    Modified for FHS - /usr/share{doc, man}
+    Added scripts to provide and remove symlink  /usr/doc/dict-wn
+    to /usr/share/doc/dict-wn and to reconfigure and restart dictd
+    when this package is installed or removed.
+    Corrected location of GPL license
+
+  * Changed Recommends: to Suggests: due to the evil way dselect
+    treats recomends.
+
+  * Omitted from earlier changelog - patches for ../libmaa/hash.c and
+    ../libmaa/decl.h were applied.  See dictd package for details of
+    patches.   These patches are only needed to build the package for
+    Sparc.  Since the package is architecture-all, the Sparc porters
+    do not need to build the package under the current setup.
+ 
+
+ -- Bob Hilliard <hilliard@debian.org>  Tue, 26 Oct 1999 17:01:09 -0400
+
+
+dict-web1913 (1.4-0.47pd-1) unstable; urgency=low
+
+  * Public Domain Version
+  
+  * Extracted dict-web1913-1.4.orig.tar.gz into the 
+    dict-web1913-1.4_0.47pd/ directory; removed the database directory
+    (web1913-0.46-a) and upacked the public domain version
+    (web1913_0.47-pd.tar.gz) into web1913_0.47-pd/. Changed all file
+    names in this directory from web_* to web1913.* to satisfy the
+    Makefile.  Created dict-web1913_1.4_0.47pd.orig.tar.gz from this
+    configuration.  Removed DOS newlines (^M) from databse files.
+
+  * Modified Makefile.in as shown below for 1.4a-1.
+
+  * Hacked webfilter.l to work with changed tags in the pd version.
+
+  * Added a sed script in Makefile.in to modify the data stream input
+    to webfilter to correct an error in representing the chemical
+    formula for Carbonyl, which caused webfilter to break, and
+    to remove the tag `&fist;'.
+
+ -- Bob Hilliard <hilliard@debian.org>  Sun, 13 Jun 1999 17:07:27 -0400
+
+  
+dict-web1913 (1.4a-1) unstable; urgency=low
+
+  * Non-free version - not released while waiting for pd version;
+    Initail release  Fri, 20 Nov 1998 20:06:39 -0500
+
+  * Unpacked dict-web1913-1.4.tar.gz (the formatting software) into
+    dict-web1913-1.4; renamed dict-web1913-1.4 to dict-web1913-1.4a.
+    Copied web1913-0.46-a.tar.gz (the database file) into this directory
+    and unpacked it.  This is the configuration from which the package is
+    built. Ran tar czf on dict-web1913-1.4a, to create
+    dict-web1913_1.4a.orig.tar.gz  
+  
+  * Modified Makefile.in:
+    Removed configure from the files removed by the distclean target in
+    toplevel Makefile.in and in libmaa subdirectory.
+    Commented out "install -m 755 -d $(dictdir)" since debian\rules makes
+    this directory.
+    Commented out "install-cide" from install: target and, $(CIDEBASE)
+    $(CIDEINDEX): $(EXES) target
+  
+  * Removed two cide files from web1913-0.46-a/
+  
+ -- Bob Hilliard <hilliard@debian.org>  Wed, 29 Apr 1998 22:09:26 -0400
+
+Local variables:
+mode: debian-changelog
+End:

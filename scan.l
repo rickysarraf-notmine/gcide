@@ -245,7 +245,7 @@ void comment( const char *text, int length )
          fmt_string( "00-database-url" );
          fmt_newline(1);
          fmt_indent(3);
-         fmt_string( "ftp://ftp.gnu.org/gnu/dictionary" );
+         fmt_string( "ftp://ftp.gnu.org/gnu/gcide" );
       } else {
          fmt_add_index( "00-web1913-url" );
          fmt_string( "00-database-url" );
@@ -261,7 +261,7 @@ void comment( const char *text, int length )
       fmt_add_index( "00-database-short" );
       if (database == 1) {
 	 fmt_add_index( "00-gcide-short" );
-	 fmt_string( "The Collaborative International Dictionary of English v.0.46" );
+	 fmt_string( "The Collaborative International Dictionary of English v.0.48" );
       } else {
 	 fmt_add_index( "00-web1913-short" );
 	 fmt_string( "Webster's Revised Unabridged Dictionary (1913)" );

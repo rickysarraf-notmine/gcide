@@ -1,0 +1,9 @@
+# The following will, I hope, remove all page number comments:
+
+s/<-- p. [0-9]* [[:alpha:]=]\{0,6\}[[:space:]]\{0,3\}-->//g
+s/<p><\/p>//g
+
+# Need to take out:
+# <p><br/
+# [<source>1913 Webster</source>]</p>
+# This was done manually.

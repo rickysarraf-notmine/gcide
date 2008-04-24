@@ -11792,10 +11792,10 @@ the transmission time from several orbiting satellites.  GPS
 is more precise than any other navigation system available, yielding
 position accurate within 10 meters 95% of the time.</def><br/
 <syn><b>Syn. --</b> GPS.</syn><br/<br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><note>  The precision of the GPS is dependent upon the very high timing accuracy of atomic clocks.  Although the military originally intentionally degraded the signal and thus the accuracy for civilian users, GPS was nevertheless more precise than any other navigation system available.  In 2000,  <person>President Clinton</person> issued an executive order discontinuing the degrading of the signal for civilians.</note><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><q>On June 26, 1993 . . . the <org>U.S. Air Force</org> launched the 24th Navstar satellite into orbit, completing a network of 24 satellites known as the Global Positioning System, or GPS.  With a GPS receiver that costs less than a few hundred dollars you can instantly learn your location on the planet -- your latitude, longitude, and even altitude -- to within a few hundred feet.<br/
     This incredible new technology was made possible by a combination of scientific and engineering advances, particularly development of the world's most accurate timepieces: atomic clocks that are precise to within a billionth of a second.</q> <qau>http://www4.nationalacademies.org/beyond/beyonddiscovery.nsf/web/gps?OpenDocument</qau><br/

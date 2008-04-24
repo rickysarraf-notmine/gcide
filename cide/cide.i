@@ -1944,9 +1944,9 @@ Assist, <qex>if</qex> <OE/dipus deserve thy care.</q> <rj><qau>Pope.</qau></rj><
     Almost certainly not.  At this point I will say that I have thought for some years off and on as to how one might set up an experiment to test the hypotheses, since the sporadic and rare nature of the natural version renders its investigation a highly intractable problem.  However: the combustion of methane under the conditions in a marsh would give a yellow flame, and heat.<br/
     Will o'the Wisp is not like this, so it is said.  Firstly the flame is bluish, not yellow, and it is said to be a cold flame.  The colour and the temperature suggests some sort of phosphorescence; since organic material contain phosphorus, the production of phosphine or diphosphine is scarcely impossible, and maybe it does oxidise via a mainly chemiluminescent reaction.  The exact nature of the Will o'the Wisp reaction nevertheless remains, to me at any rate, a mystery.  Similar phenomena have been reported in graveyards and are known as corpse candles.  If anyone knows anything more, I would love to hear of it.  A warning that if you look for it on the Web, you will get a great deal of bizarre stuff. You will also get the delightful picture from a Canadian artist which decorates the top of this page (http://www.rod.beavon.clara.net/willo.htm), and a couple of poems at least. One is also by a Canadian, <person>Annie Campbell Huestis</person>, the other by the prolific fantasy poet <person>Walter de la Mare</person>.<br/
     The preparation of phosphine in the laboratory (by the teacher!) is fun, and perfectly safe in a fume cupboard.  White phosphorus is boiled with aqueous sodium hydroxide solution in an apparatus from which all air must have been removed by purging with, say, natural gas.  The phosphine will form marvellous smoke rings if allowed to bubble up through water in a pneumatic trough.  This is an experiment for the teacher, needless to say. The experiment is described in <person>Partington J.R.</person>, <ldqo/A Textbook of Inorganic Chemistry<rdqo/, 6th ed, Macmillan 1957, p 572. (So, inter alia, is a great deal of other interesting chemistry.)</q><br/
-<rj><qau>Dr. Rod Beavon<br/
-(17 Dean's Yard London SW1P 3PB;<br/
-e-mail:  rod.beavon@westminster.org.uk</qau></rj><br/
+<rj>Dr. Rod Beavon<br/</rj>
+<rj>17 Dean's Yard London SW1P 3PB</rj><br/
+<rj>e-mail:  rod.beavon@westminster.org.uk</rj><br/
 [<source>PJC</source>]</p>
 
 <p><sn>2.</sn> <def>Fig.: A misleading influence; a decoy.</def><br/
@@ -6022,7 +6022,7 @@ To star or sunlight.</q> <rj><qau>Milton.</qau></rj><br/
 <p><sn>2.</sn> <def>Not to be avoided or evaded; obligatory; binding; compulsory; <as>as, an <ex>imperative</ex> duty or order</as>.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>3.</sn> <fld>(Gram.)</fld> <def>Expressive of commund, entreaty, advice, or exhortation; <as>as, the imperative mood</as>.</def><br/
+<p><sn>3.</sn> <fld>(Gram.)</fld> <def>Expressive of command, entreaty, advice, or exhortation; <as>as, the imperative mood</as>.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Imperative</ent><br/

@@ -1971,7 +1971,7 @@ We must supplant those rough, rug-headed <qex>kerns</qex>.</q> <rj><qau>Shak.</q
 [<source>1913 Webster</source>]</p>
 
 <p><sn>2.</sn> <fld>(Naut.)</fld> <def>In modern usage, a sailing vessel having two masts, with the main mast taller than the aftermost, or mizzen, mast.</def><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><cs><col><b>Bomb ketch</b></col>. <cd>See under <er>Bomb</er>.</cd></cs><br/
 [<source>1913 Webster</source>]</p>

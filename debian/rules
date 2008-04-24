@@ -1,0 +1,128 @@
+#! /usr/bin/make -f
+
+############################ -*- Mode: Makefile -*- ###########################
+## rules ---
+## Author           : Robert D. Hilliard <hilliard@@debian.org>
+## Created On       : Sun, 19 Apr 1998 23:33:01 -0400
+## Last Modified By : Roger Leigh <rleigh@debian.org>
+## Last Modified On : Tue, 19 Jul 2005 22:30:36 +0100
+## Status           : $Id: rules,v 0.16 2003/06/03 21:48:14 bob Exp bob $
+## Last Changes     : $Log: rules,v $
+## Last Changes     : Revision 0.16  2003/06/03 21:48:14  bob
+## Last Changes     : bumped debian version number of dict-web1913
+## Last Changes     :
+## Last Changes     : Revision 0.15  2003/05/11 22:01:12  bob
+## Last Changes     : incremented version of dict-web1913
+## Last Changes     :
+## Last Changes     : Revision 0.14  2003/05/11 21:44:07  bob
+## Last Changes     : removed prerm scripts which did nothing but remove /usr/doc /symlink
+## Last Changes     :
+## Description      : debian/rules for dict-gcide
+## Acknowledgment   : This debian/rules file is based on Manoj Srivasta's 
+##                  : <srivasta@@debian.org> sample debian/rules files.
+##                  : Any errors belong to me alone.
+###############################################################################
+
+# The name of the package (for example, `emacs').
+pkg1   := dict-gcide
+
+# Configuration variables (these should be pretty generic)
+CC = cc
+CFLAGS=  -O2 
+LDFLAGS = -s
+PREFIX = /usr
+BINDIR = $(PREFIX)/bin
+MANDIR = $(PREFIX)/man
+MAN1DIR = $(MANDIR)/man1
+DOCDIR = $(PREFIX)/doc/$(pkg)
+
+#  Package specific stuff.  The idea is to try to make the rules
+#  generic (gradually).
+
+export LC_ALL=C
+
+FILES_TO_CLEAN  = debian/files debian/*~ *~ *.dict* *.index
+DIRS_TO_CLEAN   = debian/$(pkg1) 
+STAMPS_TO_CLEAN = stamp-configure stamp-build stamp-binary-indep
+DICTDIR = debian/$(pkg1)/usr/share/dictd
+
+
+install_file= install -p -o root -g root -m 644
+install_program= install -p -o root -g root -m 755
+make_directory= install -d -o root -g root -m 755
+
+all build: stamp-build
+# Builds the binary package.
+
+configure: stamp-configure
+
+stamp-configure:
+	./configure --verbose --prefix=$(PREFIX) && touch stamp-configure
+
+
+stamp-build:
+# Builds the binary package.
+	$(checkdir)
+	-test -f stamp-configure || $(MAKE) -f debian/rules configure
+	$(MAKE) CC="$(CC)" LDFLAGS="$(LDFLAGS)"
+	$(MAKE) db
+	touch stamp-build
+
+clean:
+# Undoes the effect of `$(MAKE) -f debian/rules build'.
+	$(checkdir)
+	-test -f Makefile && $(MAKE) distclean       
+	-rm -f  $(FILES_TO_CLEAN) $(STAMPS_TO_CLEAN)
+	-rm -rf $(DIRS_TO_CLEAN)
+	-rm -f core `find . \( -name '*.orig' -o -name '*.rej' -o -name '*~' \
+                -o -name '*.bak' -o -name '#*#' -o -name '.*.orig' \
+                -o -name '.*.rej' -o -name '.SUMS' -o -size 0 \) -print` TAGS
+
+binary: binary-indep binary-arch
+
+binary-indep: build stamp-binary-indep
+
+
+binary-arch: build stamp-binary-indep
+
+stamp-binary-indep:
+# Makes a binary package.
+	@@test root = "`whoami`" || (echo need root privileges; exit 1)
+	$(checkdir)
+	test -f stamp-build  || $(MAKE) -f debian/rules build
+	rm -rf               debian/$(pkg1) debian/tmp.deb
+	$(make_directory)    debian/$(pkg1)/DEBIAN
+	$(make_directory)    debian/$(pkg1)/usr/share/dictd
+	$(make_directory)    debian/$(pkg1)/usr/share/doc/$(pkg1)
+	$(MAKE)              install dictdir=$(DICTDIR)
+	$(install_program)   debian/postinst debian/$(pkg1)/DEBIAN/
+	$(install_program)   debian/postrm debian/$(pkg1)/DEBIAN/
+	$(install_file)      ChangeLog \
+			       debian/$(pkg1)/usr/share/doc/$(pkg1)/changelog
+	$(install_file)      debian/changelog \
+			       debian/$(pkg1)/usr/share/doc/$(pkg1)/changelog.Debian
+	$(install_file)      cide/README.dic \
+			       debian/$(pkg1)/usr/share/doc/$(pkg1)/README.dictionary
+	gzip -9frq           debian/$(pkg1)/usr/share/doc/$(pkg1)/
+# Make sure the copyright file is not compressed
+	$(install_file)      debian/copyright \
+	                     debian/$(pkg1)/usr/share/doc/$(pkg1)/copyright
+	dpkg-gencontrol      -isp -p$(pkg1) -Pdebian/$(pkg1)
+	chown -R root.root   debian/$(pkg1)
+	dpkg --build         debian/$(pkg1) ..
+
+	touch                stamp-binary-indep
+
+
+checkroot:
+	@@test root = "`whoami`" || (echo need root priviledges; exit 1)
+
+define checkdir
+	test -f  webfmt.c -a -f debian/rules
+endef
+
+source diff:
+	@@echo >&2 'source and diff are obsolete - use dpkg-source -b'; false
+
+
+.PHONY: binary binary-arch binary-indep clean

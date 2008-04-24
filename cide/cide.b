@@ -7329,7 +7329,7 @@ The <qex>bargain</qex> of your faith.</q> <rj><qau>Shak.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Basic process</ent><br/
-<hw>Ba"sic proc"ess</hw>. <fld>(Iron Metal.)</fld> <def>A Bessemer or open-hearth steel-making process in which a lining that is basic, or not siliceous, is used, and additions of basic material are made to the molten charge during treatment. Opposed to <contr><cref>acid process</cref></contr>, above. Called also <altname>Thomas process</altname>.</def><br/
+<hw>Ba"sic proc"ess</hw>. <fld>(Iron Metal.)</fld> <def>A Bessemer or open-hearth steel-making process in which a lining that is basic, or not siliceous, is used, and additions of basic material are made to the molten charge during treatment. Opposed to <cref>acid process</cref>, above. Called also <altname>Thomas process</altname>.</def><br/
 [<source>Webster 1913 Suppl.</source>]</p>
 
 <p><ent>basics</ent><br/
@@ -26638,7 +26638,7 @@ And <qex>blossomed</qex>.</q> <rj><qau>Tennyson.</qau></rj><br/
 <hw>blo"vi*ate</hw> <pr>(bl<omac/"v<icr/*<amac/t)</pr>, <pos>v. i.</pos> <vmorph>[<pos>imp. & p. p.</pos> <conjf>bloviated</conjf> <pr>(bl<omac/"v<icr/*<amac/*t<ecr/d)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>bloviating</conjf> <pr>(bl<omac/"v<icr/*<amac/*t<icr/ng)</pr>.]</vmorph> <def>To orate pompously; -- used especially of politicians and news commentators.</def> <au>Frank Rich (N. Y. Times Jan. 6, 1999, p. A23)</au> -- <wordforms><wf>blo"vi*a*tor</wf>, <pos>n.</pos> -- <wf>blo"vi*a*tion</wf>, <pos>n.</pos></wordforms><br/
 [<source>PJC</source>]</p>
 
-<p><q><ldquo/We've had almost three weeks of lawyers <qex>bloviating</qex> about what the facts in the case are,<rdquo/ Mr. Rogan said.  <ldquo/Wouldn't it be easier to bring the witnesses?<rdquo/</q> <rj><qau>Quoted by Eric Schmitt in <publ>The New York Times</publ>, Jan 22, 1999, p. A15.</qau></rj></p>
+<p><q><ldquo/We've had almost three weeks of lawyers <qex>bloviating</qex> about what the facts in the case are,<rdquo/ Mr. Rogan said.  <ldquo/Wouldn't it be easier to bring the witnesses?<rdquo/</q> <rj><qau>Quoted by Eric Schmitt in The New York Times, Jan 22, 1999, p. A15.</qau></rj></p>
 
 <p><ent>Blow</ent><br/
 <hw>Blow</hw> <pr>(bl<omac/)</pr>, <pos>v. i.</pos> <vmorph>[<pos>imp.</pos> <conjf>Blew</conjf> <pr>(bl<umac/)</pr>; <pos>p. p.</pos> <conjf>Blown</conjf> <pr>(bl<omac/n)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>Blowing</conjf>.]</vmorph> <ety>[OE. <ets>blowen</ets>, AS. <ets>bl<omac/wan</ets> to blossom; akin to OS. <ets>bl<omac/jan</ets>, D. <ets>bloeijen</ets>, OHG. <ets>pluojan</ets>, MHG. <ets>bl<uum/ejen</ets>, G. <ets>bl<uum/hen</ets>, L. <ets>florere</ets> to flourish, OIr. <ets>blath</ets> blossom. Cf. <er>Blow</er> to puff, <er>Flourish</er>.]</ety> <def>To flower; to blossom; to bloom.</def><br/

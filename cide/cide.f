@@ -9720,10 +9720,10 @@ The siren's isle.</q> <rj><qau>Chapman.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>3.</sn> <def>The unobstructed region of the ocean over which the wind blows to generate waves.</def><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><sn>4.</sn> <specif>Hence:</specif> <def>The length of such a region.</def><br/
-[<source>RH</source>]</p>
+[<source>RDH</source>]</p>
 
 <p><cs><col><b>Fetch candle</b></col>, <cd>a light seen at night, superstitiously believed to portend a person's death.</cd></cs><br/
 [<source>1913 Webster</source>]</p>
@@ -10344,7 +10344,7 @@ Of pale and bloodless emulation.</q> <rj><qau>Shak.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Fibrilla</ent><br/
-||<hw>fi*bril"la</hw> <pr>(?)</pr>, <pos>n.</pos>; <plu><it>pl.</it> <plw>fibrill<ae></plw> <pr>(#)</pr>.</plu> <ety>[NL. See <er>Fibril</er>.]</ety> <def>A minute thread or fiber, as one of the fibrous elements of a muscular fiber; a fibril.</def><br/
+||<hw>fi*bril"la</hw> <pr>(?)</pr>, <pos>n.</pos>; <plu><it>pl.</it> <plw>fibrill\'92</plw> <pr>(#)</pr>.</plu> <ety>[NL. See <er>Fibril</er>.]</ety> <def>A minute thread or fiber, as one of the fibrous elements of a muscular fiber; a fibril.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Fibrillar</ent><br/
@@ -16384,7 +16384,7 @@ He <qex>flashes</qex> into one gross crime or other.</q> <rj><qau>Shak.</qau></r
 [<source>WordNet 1.5</source>]</p>
 
 <p><ent>Flash point</ent><br/
-<hw>Flash" point`</hw> <pr>(?)</pr>, <pos>n.</pos> <sn>1.</sn> <def>the lowest temperature at which the vapors given off by a volatile liquid exposed to air will burst into flame when approached by a flame.  Also called <altname><cref>flashing point</cref></altname>.</def><br/
+<hw>Flash" point`</hw> <pr>(?)</pr>, <pos>n.</pos> <sn>1.</sn> <def>the lowest temperature at which the vapors given off by a volatile liquid exposed to air will burst into flame when approached by a flame.  Also called <altname>flashing point</altname>.</def><br/
 [<source>PJC</source>]</p>
 
 <p><sn>2.</sn> <def>That point in time or that degree of provocation at which someone will suddenly begin to act vigorously; -- often used in reference to angry reactions.</def><br/

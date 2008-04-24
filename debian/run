@@ -1,0 +1,3 @@
+#! /bin/sh
+
+sed -f debian/sedfile cide.?| ./webfilter | ./webfmt -c

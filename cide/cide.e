@@ -22165,9 +22165,9 @@ Waiting for the <ldquo/fina venko<rdquo/: <ldquo/We're still a little club, in a
 <br/
 <ldquo/There are directories of Esperantists all over the world, and when someone is traveling to a foreign country it will frequently happen that an Esperantist will write or e-mail a fellow Esperantist and be invited to stay in his home.  Does that happen with people who speak just English? I don't think so.<rdquo/</q><br/
 <br/
-<qau>Mark Feeney<br/
+<qau>Mark Feeney</qau><br/
 [This story ran on page F01 of the Boston Globe on 05/12/99.<br/
-Copyright 1999 Globe Newspaper Company.] (available at http://www.esne.net/ligoj/boston_globe_article.htm)</qau><br/
+Copyright 1999 Globe Newspaper Company.] (available at http://www.esne.net/ligoj/boston_globe_article.htm)<br/
 [<source>PJC</source>]</p>
 
 <p><ent>Espiaille</ent><br/

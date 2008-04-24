@@ -1,0 +1,58 @@
+     This is the Debian GNU/Linux prepackaged version of GCIDE, the
+GNU version of the Collaborative International Dictionary of English,
+formatted for use by The DICT Development Group's client sever software.
+
+     The formatting software was written by Rickard E. Faith
+(faith@acm.org).
+
+     This package was constructed by Robert D. Hilliard
+<hilliard@debian.org> from sources obtained from ftp.dict.org/pub/dict
+(formatting software) and raw data files obtained privately from the
+editor.  The GCIDE is archived on ftp.gnu.org, in the directory
+/gnu/gcide, but this archive does not always contain the most recent
+version.
+
+Changes:
+ * added Debian GNU/Linux package maintenance system files
+ * Modified webfilter.l and Makefile to handle modified tags.
+ 
+     The GCIDE is distributed under the following license:
+
+GCIDE is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2, or (at your option)
+any later version.
+
+GCIDE is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this copy of GCIDE; see the file COPYING.  If not, write 
+to the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+Boston, MA 02111-1307, USA.
+
+
+     The formatting software is distributed under the following
+license:
+
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the
+ * Free Software Foundation; either version 1, or (at your option) any
+ * later version.
+ *
+ * This program is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * General Public License for more details.
+
+     On Debian GNU/Linux systems, the complete text of the GNU General
+Public License can be found in `/usr/share/common-licenses/GPL'
+
+     A copy of the GNU General Public License is also available at
+<URL:http://www.gnu.org/copyleft/gpl.html>.  You may also obtain it by
+writing to the Free Software Foundation, Inc., 59 Temple Place - Suite
+330, Boston, MA 02111-1307, USA.
+
+Robert D. Hilliard  <hilliard@debian.org>

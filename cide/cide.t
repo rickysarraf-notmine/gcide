@@ -2840,8 +2840,8 @@ Samarkand -- let alone Uzbekistan -- has too many Timurid gems to describe in on
 Finally and fittingly we turn to the Gur-i Amir, or "Tomb of the Ruler", Timur's own last resting place. This fabulous structure, which was completed in 1404, is dominated by the octagonal mausoleum and its peerless fluted dome, azure in colour, with 64 separate ribs. Within lie the remains not only of Timur, but also of various members of his family, including his grandson the scholar-king Ulugh Beg. Timur's tomb is protected by a single slab of jade, said to be the largest in the world. Brought back by Ulugh Beg from Mongolia in 1425, it was broken in half in the 18th century by the Persian ruler Nadir Shah, who tried to remove it from the chamber. Carved into the jade is an inscription in Arabic: "When I rise, the World will Tremble".<br/
 <br/
 Coincidence, no doubt, but on the night of June 22, 1941, the Russian Scientist M. Gerasimov began his exhumation of Timur's remains. Within hours Hitler's armies crashed across the Soviet frontier signalling the beginning of the Nazi invasion. Gerasimov's investigations showed that Timur had been a tall man for his race and time, lame, as recorded, in his right leg, and with a wound to his right arm.  Surprisingly, red hair still clung to the skull from which Gerasimov reconstructed a bronze bust. Eventually Timur's remains were reinterred with full Muslim burial rites, giving truth to the message thundered in Arabic script three metres high from the cylindrical drum of the great conqueror's mausoleum: "Only God is Immortal".</q><br/
-<rj><qau>Andrew Forbes/CPA (Text copyright   2001.)<br/
-(from http://www.cpamedia.com/articles/20010215/)</qau></rj><br/
+<rj><qau>Andrew Forbes/CPA</qau> (Text copyright   2001.)<br/
+(from http://www.cpamedia.com/articles/20010215/)</rj><br/
 [<source>PJC</source>]</p>
 
 <p><ent>Tamias</ent><br/
