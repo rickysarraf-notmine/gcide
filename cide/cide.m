@@ -7718,7 +7718,7 @@ His voice, his figure, and his gesture knew.</q> <rj><qau>Dryden.</qau></rj><br/
 <mhw>{ <hw>Ma*nil"a</hw> <pr>(?)</pr>, <hw>Ma*nil"la</hw>  }</mhw>, <pos>a.</pos> <sn>1.</sn> <def>Of or pertaining to Manila or Manilla, the capital of the Philippine Islands; made in, or exported from, that city.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>2.</sn> <def><cref>Manila paper</cref> or the color of <cref>manila papaer</cref>.</def><br/
+<p><sn>2.</sn> <def><cref>Manila paper</cref> or the color of <cref>manila paper</cref>.</def><br/
 [<source>PJC</source>]</p>
 
 <p><cs><mcol><col><b>Manila cheroot</b></col> <it>or</it> <col><b>Manila cigar</b></col></mcol>, <cd>a cheroot or cigar made of tobacco grown in the Philippine Islands.</cd></cs><br/

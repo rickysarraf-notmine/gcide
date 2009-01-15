@@ -2,7 +2,7 @@ Source: dict-gcide
 Section: text
 Priority: optional
 Maintainer: Debian QA Group <packages@qa.debian.org>
-Standards-Version: 3.5.9.0
+Standards-Version: 3.8.0
 Build-Depends-Indep: flex, bison, dictzip | dictd (<<1.7.1)
 
 Package: dict-gcide
@@ -21,7 +21,7 @@ Description: A Comprehensive English Dictionary
  make them so.
  .
  This package will be of limited use without the server found in the
- dictd package, or another RFC 2229 compliant sever. 
+ dictd package, or another RFC 2229 compliant server. 
 Depends: dictd | dict-server 
 Suggests: dict-wn
 Provides: dict-web1913, dictd-dictionary

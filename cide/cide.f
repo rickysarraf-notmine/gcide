@@ -5765,7 +5765,7 @@ So goodly and erect, though <qex>faulty</qex> since.</q> <rj><qau>Milton.</qau><
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Faun</ent><br/
-<hw>Faun</hw> <pr>(?)</pr>, <pos>n.</pos> <ety>[L. <ets>Faunus</ets>, fr. <ets>favere</ets> to be favorable. See <er>Favor</er>.]</ety> <fld>(Rom. Myth.)</fld> <def>A god of fields and shipherds, diddering little from the satyr. The fauns are usually represented as half goat and half man.</def><br/
+<hw>Faun</hw> <pr>(?)</pr>, <pos>n.</pos> <ety>[L. <ets>Faunus</ets>, fr. <ets>favere</ets> to be favorable. See <er>Favor</er>.]</ety> <fld>(Rom. Myth.)</fld> <def>A god of fields and shepherds, diddering little from the satyr. The fauns are usually represented as half goat and half man.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><q>Satyr or <qex>Faun</qex>, or Sylvan.</q> <rj><qau>Milton.</qau></rj><br/
@@ -14006,7 +14006,7 @@ But <qex>firm</qex> battalion.</q> <rj><qau>Milton.</qau></rj><br/
 <p><note><hand/ In Scripture, the word denotes an expanse, a wide extent; the great arch or expanse over out heads, in which are placed the atmosphere and the clouds, and in which the stars <xex>appear</xex> to be placed, and are <xex>really</xex> seen.</note><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>3.</sn> <fld>(Old Astron.)</fld> <def>The orb of the fixed stars; the most rmote of the celestial spheres.</def><br/
+<p><sn>3.</sn> <fld>(Old Astron.)</fld> <def>The orb of the fixed stars; the most remote of the celestial spheres.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Firmamental</ent><br/

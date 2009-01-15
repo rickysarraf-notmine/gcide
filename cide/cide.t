@@ -18668,7 +18668,7 @@ The <qex>thyrsus</qex>, tipped with fragrant cones of pine.</q> <rj><qau>Longfel
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Tickle</ent><br/
-<hw>Tic"kle</hw> <pr>(?)</pr>, <pos>v. t.</pos> <vmorph>[<pos>imp. & p. p.</pos> <conjf>Tickled</conjf> <pr>(?)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>Tickling</conjf> <pr>(?)</pr>.]</vmorph> <ety>[Perhaps freq. of <ets>tick</ets> to beat; pat; but cf. also AS. <ets>citelian</ets> to tickle, D. <ets>kittelen</ets>, G. <ets>kitzlen</ets>, OHG. <ets>chizzil<omac/n</ets>, <ets>chuzzil<omac/n</ets>, Icel. <ets>kitla</ets>.  Cf. <er>Kittle</er>, <pos>v. t.</pos>]</ety> <sn>1.</sn> <def>To touch lightly, so as to produce a peculiar thrilling sensation, which commonly causes laughter, and a kind of spasm which become dengerous if too long protracted.</def><br/
+<hw>Tic"kle</hw> <pr>(?)</pr>, <pos>v. t.</pos> <vmorph>[<pos>imp. & p. p.</pos> <conjf>Tickled</conjf> <pr>(?)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>Tickling</conjf> <pr>(?)</pr>.]</vmorph> <ety>[Perhaps freq. of <ets>tick</ets> to beat; pat; but cf. also AS. <ets>citelian</ets> to tickle, D. <ets>kittelen</ets>, G. <ets>kitzlen</ets>, OHG. <ets>chizzil<omac/n</ets>, <ets>chuzzil<omac/n</ets>, Icel. <ets>kitla</ets>.  Cf. <er>Kittle</er>, <pos>v. t.</pos>]</ety> <sn>1.</sn> <def>To touch lightly, so as to produce a peculiar thrilling sensation, which commonly causes laughter, and a kind of spasm which become dangerous if too long protracted.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><q>If you <qex>tickle</qex> us, do we not laugh?</q> <rj><qau>Shak.</qau></rj><br/

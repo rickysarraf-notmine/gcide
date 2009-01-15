@@ -1,3 +1,17 @@
+dict-gcide (0.48-6) unstable; urgency=low
+
+  * QA upload.
+  * Bump to Standards-Version 3.8.0.
+  * "faun": fix typo of "shepherd".  closes: #302096.
+  * "firmament" 3.: fix typo of "remote".  closes: #254457.
+  * "tickle": fix typo of "dangerous".  closes: #258359.
+  * (debian/control): fix typo of "server".  closes: #401782.
+  * "sensible" Syn.: fix typo of "sense".  closes: #345014.
+  * "aves" note: remove extraneous comma.  closes: #336048.
+  * "manila" 2.: fix typo of "paper".  closes: #418259.
+
+ -- Clint Adams <schizo@debian.org>  Wed, 14 Jan 2009 21:22:23 -0500
+
 dict-gcide (0.48-5) unstable; urgency=low
 
   * QA Upload
