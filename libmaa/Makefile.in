@@ -1,0 +1,226 @@
+# Makefile.in -- Makefile for libmaa
+# Created: Sun Nov 19 13:32:41 1995 by faith@cs.unc.edu
+# Revised: Wed May 21 00:28:08 1997 by faith@acm.org
+# Copyright 1995, 1996, 1997 Rickard E. Faith (faith@acm.org)
+# 
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 1, or (at your option) any
+# later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 675 Mass Ave, Cambridge, MA 02139, USA.
+# 
+# $Id: Makefile.in,v 1.36 1997/05/21 05:24:16 faith Exp $
+#
+
+ifneq (,)
+This makefile requires GNU Make.
+endif
+
+MAA_MAJOR=@MAA_MAJOR@
+MAA_MINOR=@MAA_MINOR@
+VER=$(MAA_MAJOR).$(MAA_MINOR)
+VERSION=$(VER).$(shell fgrep Revision version.c \
+	| head -1 \
+	| sed 's,^.*Revision: [^.]*.,,' \
+	| sed 's, $$.*$$,,')
+
+.SUFFIXES:
+.SUFFIXES: .c .o
+
+srcdir=		@srcdir@
+VPATH=		@srcdir@
+prefix=		@prefix@
+exec_prefix=	@exec_prefix@
+libdir=         @libdir@
+includedir=     @includedir@
+subdirs=        @subdirs@ doc
+
+SHELL=		/bin/sh
+
+CC=		@CC@
+CPP=		@CPP@
+RANLIB=		@RANLIB@
+INSTALL=        @INSTALL@
+INSTALL_PROGRAM=@INSTALL_PROGRAM@
+INSTALL_DATA=	@INSTALL_DATA@
+
+CFLAGS=		@CFLAGS@
+LDFLAGS=        @LDFLAGS@
+VFLAGS=         -DMAA_MAJOR=$(MAA_MAJOR) -DMAA_MINOR=$(MAA_MINOR)
+XTRACFLAGS=     @WCFLAGS@ @XTRACFLAGS@ @DEFS@ $(VFLAGS) @CPPFLAGS@ -I.
+XTRALDFLAGS=    @WLDFLAGS@ @XTRALDFLAGS@ -L.
+RPATHFLAGS=     @RPATHFLAGS@
+LDLIBS=		-lmaa @LIBS@ -lm
+LDSHARED=       @LDSHARED@
+
+HEADERS= config.h maa.h maaP.h decl.h obstack.h @XTRAHEADERS@
+LIBOBJS= @LIBOBJS@ obstack.o getopt.o getopt1.o \
+	 hash.o set.o stack.o list.o error.o memory.o string.o \
+	 debug.o flags.o maa.o prime.o bit.o timer.o version.o \
+	 arg.o pr.o sl.o base64.o base26.o source.o parse.o parse-concrete.o \
+	 text.o log.o
+TESTS=	 settest hashtest stringtest debugtest \
+	 primetest listtest bittest argtest sltest prtest basetest
+EXES=    memtest prtest
+
+LIBS=    @TARGETLIBS@
+
+lib: $(LIBS)
+
+all: $(LIBS) $(EXES) $(TESTS)
+	echo making $@ in doc; \
+	(cd doc && $(MAKE) $@) || exit 1;
+
+install: $(LIBS)
+	install -m 644 libmaa.a $(libdir)
+	install -m 644 maa.h $(includedir)
+	if [ -e libmaa.so.$(VERSION) ]; then \
+		install -m 755 libmaa.so.$(VERSION) $(libdir); \
+		cd $(libdir); \
+		rm -f libmaa.so libmaa.so.$(VER); \
+		ln -s libmaa.so.$(VERSION) libmaa.so; \
+		ln -s libmaa.so.$(VERSION) libmaa.so.$(VER); \
+	fi
+
+tests: $(TESTS)
+	@for i in $(TESTS); do \
+		./$$i | fgrep -v ' at ' > ./$$i.out.new; \
+		if cmp ./$$i.out $$i.out.new; \
+			then echo PASSED $$i; rm -f $$i.out.new; \
+			else echo FAILED $$i; \
+		fi; \
+	done
+
+tests-update: $(TESTS)
+	@for i in $(TESTS); do \
+		echo Writing $$i.out; \
+		./$$i | fgrep -v ' at ' > $$i.out; \
+	done
+
+%.o: %.c
+	$(CC) -c $(XTRACFLAGS) $(CFLAGS) $<
+
+%: %.o
+	$(CC) $(XTRALDFLAGS) $(LDFLAGS) -o $@ $< $(LDLIBS)
+
+ALLFLAGS=$(XTRACFLAGS) $(CFLAGS) $(XTRALDFLAGS) $(LDFLAGS)
+%: %.c
+	$(CC) $(ALLFLAGS) -o $@ $< $(LDLIBS)
+%test: %test.c rnd.o
+	$(CC) $(ALLFLAGS) $(RPATHFLAGS) -o $@ $< rnd.o $(LDLIBS)
+
+dmalloc/dmalloc.h:
+	echo making all in dmalloc
+	(cd dmalloc && $(MAKE) all) || exit 1
+
+libmaa.a: $(LIBOBJS)
+	$(AR) $(ARFLAGS) $@ $(LIBOBJS)
+	-@ ($(RANLIB) $@ || true) 2> /dev/null
+
+libmaa.so: $(LIBOBJS)
+	$(LDSHARED) -o libmaa.so.$(VERSION) $(LIBOBJS)
+	-rm -f libmaa.so libmaa.so.$(VER)
+	ln -s libmaa.so.$(VERSION) libmaa.so.$(VER)
+	ln -s libmaa.so.$(VERSION) libmaa.so
+
+$(LIBOBJS): $(HEADERS) # version.stamp # don't automatically bump version
+$(EXES):    $(HEADERS) $(LIBS)
+$(TESTS):   $(HEADERS) $(LIBS) rnd.o
+
+date := $(shell date)
+version.stamp: version.c
+	cp version.c version.tmp
+	echo "/* Stamp: `date` */" > version.c
+	fgrep Revision < version.tmp | tail -1 >> version.c
+	touch version.stamp
+	-rm -f version.tmp
+
+version.c:
+	echo "/* Stamp: `date` */" > version.c
+	echo 'const char *maa_revision_string = "XRevisionX";' | \
+		sed 's/X/$$/g' >> version.c
+
+.PHONY: ChangeLog
+ChangeLog:
+	(echo "***** Making new ChangeLog..."; \
+	rm -f ChangeLog; \
+	AWK=gawk rcs2log -i 2 > ChangeLog)
+
+dist: ChangeLog
+	@( echo "Consider making version.stamp to bump version number"; \
+	CVSROOT=`cat CVS/Root`; \
+	export CVSROOT; \
+	VERSION=$(MAA_MAJOR).$(MAA_MINOR).`fgrep Revision version.c \
+		| head -1 \
+		| sed 's,^.*Revision: [^.]*.,,' \
+		| sed 's, $$.*$$,,'`; \
+	export VERSION; \
+	echo "***** Copying ChangeLog for libmaa-$${VERSION}..."; \
+	cp ChangeLog /tmp; \
+	echo "***** Exporting files for libmaa-$${VERSION}..."; \
+	cd /tmp; \
+	rm -rf /tmp/libmaa-$${VERSION}; \
+	cvs export -fNd libmaa-$${VERSION} -r HEAD libmaa; \
+	cd libmaa-$${VERSION}; \
+	autoconf; \
+	mv ../ChangeLog .; \
+	cd ..; \
+	echo "***** Taring and zipping libmaa-$${VERSION}.tar.gz..."; \
+	tar cvvf libmaa-$${VERSION}.tar libmaa-$${VERSION}; \
+	gzip -9 libmaa-$${VERSION}.tar; \
+	echo "***** Done making /tmp/libmaa-$${VERSION}.tar.gz")
+
+.PHONY: clean cleandist tags
+clean:
+	@for subdir in $(subdirs); do \
+		echo making $@ in $$subdir; \
+		(cd $$subdir && $(MAKE) $@) || exit 1; \
+	done
+	-rm -f *.o *.s *~ core a.out config.log $(TESTS) $(EXES)
+	-rm -f $(LIBS) libmaa.so.*
+	-rm -f *.log *.aux *.toc *.dvi *.ps *.out.new
+	-rm -f *.cfg *.dtk .inslog tca.map .pure
+	-rm -f version.stamp version.tmp mkrnd
+
+distclean: clean
+	@for subdir in $(subdirs); do \
+		echo making $@ in $$subdir; \
+		(cd $$subdir && $(MAKE) $@) || exit 1; \
+	done
+	-rm -f config.h config.cache config.status stamp-h.in stamp-h
+	-rm -f Makefile
+#	-rm -f configure Makefile
+
+tags:
+	etags: *.c
+
+# The following is based on the "Automatic Remaking" node in the GNU
+# Autoconf documentation:
+
+$(srcdir)/configure: configure.in
+	cd $(srcdir) && autoconf
+
+# autoheader might not change config.h.in, so touch a stamp file.
+${srcdir}/config.h.in: stamp-h.in
+${srcdir}/stamp-h.in: configure.in
+	cd ${srcdir} && autoheader
+	date > ${srcdir}/stamp-h.in
+
+config.h: stamp-h
+stamp-h: config.h.in config.status
+	./config.status
+
+Makefile: Makefile.in config.status
+	./config.status
+
+config.status: configure
+	./config.status --recheck
+

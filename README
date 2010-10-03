@@ -1,0 +1,98 @@
+Sun Feb 22 09:08:47 1998, faith@cs.unc.edu
+
+
+WHAT:
+
+The files contained herein are designed to convert the data from the 
+ftp://ftp.cs.unc.edu/pub/users/faith/dict/web1913-0.46-a.tar.gz
+package into a working database and index for the DICT server.
+
+The original data for this version of:
+     Webster's Revised Unabridged Dictionary (G & C. Merriam Co., 1913,
+     edited by Noah Porter). Online version prepared by MICRA, Inc.,
+     Plainfield, N.J. and edited by Patrick Cassidy <cassidy@micra.com>.
+     ftp://uiarchive.cso.uiuc.edu/pub/etext/gutenberg/etext96/pgw*
+     http://humanities.uchicago.edu/forms_unrest/webster.form.html
+is available from: ftp://ftp.uga.edu/pub/misc/webster/, but some patches
+were applied to the files in the web1913-0.46-a.tar.gz distribution.
+
+This package only contains conversion software, and contains NO DATA.  You
+must obtain the data separately.  Please see the raw data for distribution
+terms for the raw and formatted data.  The formatting _software_ is
+currently distributed under the GNU General Public License.  If you need it
+use it under another license, contact the author.
+
+
+CONFIGURATION:
+
+./configure options:
+  --with-tmppath=PATH     use PATH for temporary files
+  --with-datapath=PATH    use PATH for original database files
+  --prefix=PREFIX         install architecture-independent files in PREFIX
+  --datadir=DIR           read-only architecture-independent data in DIR
+
+tmppath defaults to . and requires 40MB
+
+datapath defaults to ./web1913-* and should contain the data found in
+web1913-0.46-a.tar.gz [this software probably won't work with later
+versions of the raw data, but you can try...]
+
+prefix defaults to /usr
+
+datadir defaults to /usr/lib, so the data files get put in /usr/lib/dict.
+They are machine independent, you you'd want to change this to a shared
+directory structure if you want the data shared between several servers.
+For example, use --datadir=/usr/share to put the files in /usr/share/dict.
+
+30 MB of data and 4MB of index will be written to ./web1913.dict and
+./web1913.index -- you must have enough disk space available for these
+files, for the original 42MB of raw files (in datapath), and for the
+intermediate 40MB file (in tmppath).  This means you need close to 150MB of
+free disk space to format this dataset.  Additionally, you need about 50MB
+of swap space for the running programs.  Formatting takes less than 15
+minutes on a typical Pentium 133MHz.
+
+If you have libmaa installed on your system, then the local copy won't get
+built unless you use --with-local-libmaa.  Otherwise, it will be built
+automatically.
+
+If you have the dictzip program installed on your system, then the final
+30MB web1913.dict file will be compressed to about 10MB.  The file will be
+readable with the GNU zip utilities.  If you don't want this compression
+performed even though you have dictzip installed, make DICTZIP=cat and it
+will be skipped.
+
+
+EXECUTION:
+
+make          builds the libraries and executables
+make db       formats the database
+make install  installs the database (no executables are installed)
+
+When you're done with the "make db" step, it should say
+      185399 headwords words for       115301 entries, total
+
+[Versus 185774 headwords words for 115272 entries, total in 0.45.]
+[Versus 187637 headwords words for 115283 entries, total in 0.42]
+[Versus 202209 headwords words for 124121 entries, total in cide 0.43]
+
+and you'll be using up about 80MB for everything (less if you have dictzip
+installed and it automatically compressed the database).  Note that each of
+the processes use about 40MB of memory, so you need a reasonable amount of
+RAM or swap space.
+
+PROBLEMS:
+
+If the problem is with the data, you should contact MICRA via Patrick
+Cassidy <cassidy@micra.com>.  Be nice and try to be helpful -- putting this
+database together was a lot of work, and there are a lot of typos and
+data-related problems.  If you want to edit definitions, you should
+probably get the latest version of the data and work with that.  If you
+want to redistribute the data, see the terms in the raw and formatted data
+files (the terms are MICRA's, and are the same for the raw and formatted
+data).
+
+If the problem is with the programs, you should contact me, Rik Faith
+(faith@cs.unc.edu).  Patches or suggestions are always welcome, but my time
+is limited and I might not reply to your email immediately.  If its many
+years after 1998, faith@acm.org might be a better alternative address.

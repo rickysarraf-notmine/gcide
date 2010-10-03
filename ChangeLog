@@ -1,0 +1,94 @@
+Sun Feb 22 19:29:21 1998  Rik Faith  <faith@rtp-nc4-08>
+
+  * Makefile.in: Elide CIDE for now
+
+  * scan.l, webfilter.l, Makefile.in, README, parse.y: More cross references
+  Revert CIDE until more time is available to work on it
+
+  * scan.l, README: Ignore <br/ -- it causes too many problems
+
+  * parse.y, scan.l, webfilter.l, webfmt.c, Makefile.in, README:
+  Update for 0.46 and CIDE
+
+Mon Feb 16 00:05:03 1998  Rik Faith  <faith@rtp-nc4-08>
+
+  * scan.l, webfilter.l, parse.y: Added cross references
+
+Mon Jan 26 03:51:42 1998  Rik Faith  <faith@rtp-nc4-08>
+
+  * webfilter.l, scan.l, README, parse.y, Makefile.in:
+  Working on web1913 0.45 and {} cross references
+
+Sat Jul 12 02:59:43 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * scan.l, fmt.c, configure.in, README, Makefile.in:
+  Minor changes preparing for distribution
+
+Thu May 22 01:14:40 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * Makefile.in, configure.in: Fixed raw data search strategy
+
+  * Attic/iso-filter.dat, configure.in, README, Makefile.in:
+  Preparing for release
+
+Wed May 21 23:52:07 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * webfmt.h, webfmt.c, webfilter.l, webcheck.l, scan.l, parse.y, fmt.c, configure.in, Makefile.in, Makefile.conf:
+  Unified processor naming
+
+  * Attic/iso-filter.dat: First attempt at ISO-8859-1 character use
+
+  * scan.l, webfilter.l, fmt.h, fmt.c, configure.in, Makefile.in:
+  Added copyright information from original data
+
+Sat May 10 10:21:02 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * scan.l, webfilter.l, parse.y, fmt.c, filter.dat:
+  Updated routines for 0.42 database
+
+Sun Mar 23 12:24:16 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * webfilter.l, tex-like.dat, scan.l, webfmt.h, webfmt.c, fmt.h, parse.y, fmt.c, filter.dat:
+  Finished preliminary formatting
+
+Wed Mar 19 21:11:35 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * webfilter.l, parse.y, scan.l, webfmt.c, Makefile.in, filter.dat:
+  Finished up entities, now on to formatting
+
+Tue Mar 18 22:33:00 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * webcheck.l: MOre entities
+
+  * scan.l, webcheck.l, Makefile.in: More entities...
+
+  * scan.l, webfmt.h, parse.y, webfmt.c, fmt.h, fmt.c, webcheck.l, dump.h, configure.in, config.h.in, Makefile.in:
+  Working toward nicely formatted output
+
+Mon Mar 10 21:46:53 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * configure.in, COPYING: More work
+
+Sat Mar  8 22:36:16 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * configure.in: Finish SunOS port
+
+  * configure.in: Cleanup for SunOS
+
+Fri Mar  7 20:37:09 1997  Rik Faith  <faith@rtp-nc4-08>
+
+  * configure.in, config.sub: Reorganization for better packaging
+
+Thu Sep 26 02:27:42 1996  Rik Faith  <faith@rtp-nc4-08>
+
+  * install-sh, config.sub, configure.in, config.guess:
+  General work on formatting and use with configure.
+
+Tue Sep 24 01:07:41 1996  Rik Faith  <faith@rtp-nc4-08>
+
+  * COPYING: Move to version 2.0
+
+Mon Sep 23 15:28:28 1996  Rik Faith  <faith@rtp-nc4-08>
+
+  * COPYING: dict-1.0
+

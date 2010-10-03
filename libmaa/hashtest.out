@@ -1,0 +1,114 @@
+Running test for count of 100
+Expected "datum100", got "(null)"
+key80: datum80
+key71: datum71
+key62: datum62
+key53: datum53
+key44: datum44
+key9: datum9
+key35: datum35
+key26: datum26
+key97: datum97
+key17: datum17
+key88: datum88
+key79: datum79
+key0: datum0
+key50: datum50
+key8: datum8
+key41: datum41
+key6: datum6
+key32: datum32
+key23: datum23
+key94: datum94
+key14: datum14
+key85: datum85
+key76: datum76
+key67: datum67
+key58: datum58
+key49: datum49
+key5: datum5
+key31: datum31
+key3: datum3
+key22: datum22
+key13: datum13
+key20: datum20
+key91: datum91
+key11: datum11
+key82: datum82
+key73: datum73
+key64: datum64
+key55: datum55
+key46: datum46
+key37: datum37
+key28: datum28
+key99: datum99
+key19: datum19
+key2: datum2
+key90: datum90
+key10: datum10
+key81: datum81
+key72: datum72
+key63: datum63
+key70: datum70
+key54: datum54
+key61: datum61
+key45: datum45
+key52: datum52
+key36: datum36
+key43: datum43
+key27: datum27
+key34: datum34
+key18: datum18
+key25: datum25
+key96: datum96
+key16: datum16
+key87: datum87
+key78: datum78
+key69: datum69
+key60: datum60
+key51: datum51
+key42: datum42
+key7: datum7
+key33: datum33
+key40: datum40
+key24: datum24
+key95: datum95
+key15: datum15
+key86: datum86
+key93: datum93
+key77: datum77
+key84: datum84
+key68: datum68
+key75: datum75
+key59: datum59
+key66: datum66
+key57: datum57
+key48: datum48
+key39: datum39
+key4: datum4
+key30: datum30
+key21: datum21
+key92: datum92
+key12: datum12
+key83: datum83
+key74: datum74
+key65: datum65
+key56: datum56
+key47: datum47
+key38: datum38
+key29: datum29
+key98: datum98
+key89: datum89
+key1: datum1
+   5 resizings to 347 total
+   100 entries (88 buckets used, 76 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   101 retrievals (86 from top, 1 failed)
+   5 resizings to 347 total
+   100 entries (87 buckets used, 74 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   100 retrievals (75 from top, 0 failed)
+   5 resizings to 347 total
+   100 entries (89 buckets used, 78 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   100 retrievals (79 from top, 0 failed)

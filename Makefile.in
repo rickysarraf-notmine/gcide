@@ -1,0 +1,266 @@
+# Makefile.in -- 
+# Created: Sun Mar 16 09:40:25 1997 by faith@cs.unc.edu
+# Revised: Sun Feb 22 14:28:41 1998 by faith@acm.org
+# Copyright 1997, 1998 Rickard E. Faith (faith@acm.org)
+# 
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 1, or (at your option) any
+# later version.
+# 
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 675 Mass Ave, Cambridge, MA 02139, USA.
+# 
+# $Id: Makefile.in,v 1.12 1998/02/22 19:29:21 faith Exp $
+#
+
+VERSION=1.4
+NAME=dict-web1913
+
+ifneq (,)
+This makefile requires GNU Make.
+endif
+
+.SUFFIXES:	
+
+srcdir=		@srcdir@
+VPATH=		@srcdir@
+prefix=		@prefix@
+datadir=        @datadir@
+dictdir=        $(datadir)/dict
+subdirs=        @allsubdirs@
+exec_prefix=	@exec_prefix@
+man1_prefix=	$(prefix)/man/man1
+
+SHELL=		/bin/sh
+
+CC=		@CC@
+CPP=		@CPP@
+RANLIB=		@RANLIB@
+INSTALL=	@INSTALL@
+INSTALL_PROGRAM=@INSTALL_PROGRAM@
+INSTALL_DATA=	@INSTALL_DATA@
+LEX=		@LEX@
+LEXLIB= 	@LEXLIB@
+YACC=		@YACC@
+DICTZIP=        @DICTZIP@
+
+CFLAGS=		@CFLAGS@
+LDFLAGS=        @LDFLAGS@
+XTRACFLAGS=     @WCFLAGS@ @XTRACFLAGS@ @DEFS@ @CPPFLAGS@ -I.
+XTRALDFLAGS=    @WLDFLAGS@ @XTRALDFLAGS@
+LDLIBS=		@LIBS@
+
+EXES=	 	webfilter webfmt
+OBJS=           scan.o parse.o fmt.o
+
+HEADERS= 	./config.h @XTRAHEADERS@ webfmt.h fmt.h dump.h
+
+TMPS=           scan.c parse.c parse.h webfilter.c
+
+DATABASE=       web1913.dict
+DATAINDEX=      web1913.index
+CIDEBASE=       gcide.dict
+CIDEINDEX=      gcide.index
+DATAPATH=       @DATAPATH@
+DATAFILES=     	$(DATAPATH)/web1913.?
+CIDEFILES=      $(DATAPATH)/cide.?
+TMPPATH=        @TMPPATH@
+TMPFILE=        web1913.tmp
+
+all::
+	@for subdir in $(subdirs); do \
+		echo making in $$subdir; \
+	 	if [ "$$subdir" = "zlib" ]; then \
+			(cd $$subdir \
+			&& $(MAKE) CC="$(CC)" CFLAGS="$(CFLAGS)" libz.a) \
+			|| exit 1; \
+		elif [ "$$subdir" = "regex" ]; then \
+			(cd $$subdir \
+			&& $(MAKE) CC="$(CC) $(CFLAGS)" lib) \
+			|| exit 1; \
+		else \
+			(cd $$subdir && $(MAKE)) || exit 1; \
+		fi \
+	done
+
+all:: $(EXES)
+
+db: $(CIDEBASE) # $(DATABASE)  
+
+# web1913: $(DATABASE)
+cide: $(CIDEBASE)
+
+# $(DATABASE) $(DATAINDEX): $(EXES)
+# 	  ./webfilter $(DATAFILES) > $(TMPPATH)/$(TMPFILE)
+# 	  ./webfmt < $(TMPPATH)/$(TMPFILE)
+# 	  -rm -f $(TMPPATH)/$(TMPFILE)
+# 	  if [ "$(DICTZIP)" != "cat" ]; then \
+# 		  dictzip -v $(DATABASE); \
+# 	  fi
+
+$(CIDEBASE) $(CIDEINDEX): $(EXES) 
+	sed -f debian/sedfile $(CIDEFILES) |\
+	./webfilter | ./webfmt -c 
+	if [ "$(DICTZIP)" != "cat" ]; then \
+		dictzip -v $(CIDEBASE); \
+	fi
+
+pack: $(DATAINDEX) # $(CIDEINDEX)
+	if [ -e $(DATABASE).dz ]; then \
+		tar cvf /tmp/$(NAME)-$(VERSION)-pre.tar \
+			$(DATABASE).dz $(DATAINDEX); \
+	else \
+		tar cvf /tmp/$(NAME)-$(VERSION)-pre.tar \
+			$(DATABASE) $(DATAINDEX); \
+	fi
+	gzip -f9 /tmp/$(NAME)-$(VERSION)-pre.tar
+
+install: install-cide # install-web1913 
+
+install-web1913: $(DATAINDEX)
+#	-install -m 755 -d $(dictdir)
+	if [ -e $(DATABASE).dz ]; then \
+		install -m 644 $(DATABASE).dz $(dictdir); \
+	else \
+		install -m 644 $(DATABASE) $(dictdir); \
+	fi
+	install -m 644 $(DATAINDEX) $(dictdir)
+
+install-cide: $(CIDEINDEX)
+#	-install -m 755 -d $(dictdir)
+	if [ -e $(CIDEBASE).dz ]; then \
+		install -m 644 $(CIDEBASE).dz $(dictdir); \
+	else \
+		install -m 644 $(CIDEBASE) $(dictdir); \
+	fi
+	install -m 644 $(CIDEINDEX) $(dictdir)
+
+%.o: %.c
+	$(CC) -c $(XTRACFLAGS) $(CFLAGS) $<
+
+ALLFLAGS=$(XTRACFLAGS) $(CFLAGS) $(XTRALDFLAGS) $(LDFLAGS)
+%: %.c
+	$(CC) $(ALLFLAGS) -o $@ $< $(OBJS) $(LDLIBS)
+
+$(OBJS):  $(HEADERS)
+
+webfmt: webfmt.c $(HEADERS) $(OBJS)
+	$(CC) $(ALLFLAGS) -o $@ $< $(OBJS) $(LDLIBS)
+
+scan.c: scan.l
+	$(LEX) -i $(LFLAGS) -o$@ $<
+
+webfilter.c: webfilter.l
+	$(LEX) $(LFLAGS) -o$@ $<
+
+webfilter: webfilter.c
+	$(CC) $(XTRACFLAGS) $(CFLAGS) $(LDFLAGS) \
+		-Wno-unused -o webfilter webfilter.c $(LDLIBS)
+
+scan.o: scan.c parse.o parse.h $(HEADERS)
+	$(CC) -c $(XTRACFLAGS) $(CFLAGS) -Wno-unused $<
+
+parse.c: parse.y
+	$(YACC) -tdv $<
+	cmp -s y.tab.h parse.h || mv y.tab.h parse.h
+	cmp -s y.tab.c parse.c || mv y.tab.c parse.c
+	-rm -f y.tab.h y.tab.c
+
+parse.o: parse.c $(HEADERS)
+	$(CC) -c $(XTRACFLAGS) $(CFLAGS) -Wno-implicit $<
+
+.PHONY: ChangeLog
+ChangeLog:
+	@(echo "***** Making new ChangeLog..."; \
+	rm -f ChangeLog; \
+	AWK=gawk rcs2log -i 2 -r -l > ChangeLog)
+
+dist: ChangeLog
+	@(NAME=$(NAME); \
+	export NAME; \
+	CVSROOT=`cat CVS/Root`; \
+	export CVSROOT; \
+	LIBMAACVSROOT=`cat libmaa/CVS/Root`; \
+	export LIBMAACVSROOT; \
+	VERSION=$(VERSION); \
+	export VERSION; \
+	echo "***** Copying ChangeLog for $${NAME}-$${VERSION}..."; \
+	cp ChangeLog /tmp; \
+	echo "***** Exporting files for $${NAME}-$${VERSION}..."; \
+	cd /tmp; \
+	rm -rf /tmp/$${NAME}-$${VERSION} /tmp/$${NAME}-$${VERSION}.tar.gz; \
+	cvs export -fNd $${NAME}-$${VERSION} -r HEAD $${NAME}; \
+	cd $${NAME}-$${VERSION}; \
+	echo "***** Exporting files for libmaa..."; \
+	cvs -d $${LIBMAACVSROOT} export -fNd libmaa -r HEAD libmaa; \
+	make -f Makefile.conf; \
+	mv ../ChangeLog .; \
+	cd ..; \
+	echo "***** Taring and zipping $${NAME}-$${VERSION}.tar.gz..."; \
+	tar cvvf $${NAME}-$${VERSION}.tar $${NAME}-$${VERSION}; \
+	gzip -9 $${NAME}-$${VERSION}.tar; \
+	echo "***** Done making /tmp/$${NAME}-$${VERSION}.tar.gz")
+
+.PHONY: clean distclean tags
+clean:
+	-rm -f *.o *.s *~ core a.out config.log $(EXES) $(TMPS)
+	-rm -f *.log *.aux *.toc *.dvi *.ps
+	-rm -f *.cfg *.dtk .inslog tca.map
+	-rm -f *.dct *.idx y.output
+
+recursive-clean: clean
+	@for subdir in $(subdirs); do \
+		echo making clean in $$subdir; \
+		(cd $$subdir && $(MAKE) clean) || exit 1; \
+	done
+
+distclean: clean
+	@for subdir in $(subdirs); do \
+	 	if [ "$$subdir" != "zlib" ]; then \
+			if [ "$$subdir" = "regex" ]; then \
+				echo making clean in $$subdir; \
+				(cd $$subdir && $(MAKE) clean) || exit 1; \
+			else \
+				echo making $@ in $$subdir; \
+				(cd $$subdir && $(MAKE) $@) || exit 1; \
+			fi \
+		fi \
+	done
+	-rm -f config.h config.cache config.status stamp-h.in stamp-h
+	-rm -f Makefile
+#	-rm -f configure Makefile
+	-rm -f $(DATABASE) *.dz $(DATAINDEX) $(TMPPATH)/$(TMPFILE) $(CIDEBASE) $(CIDE.INDEX)
+
+tags:
+	etags *.[ch]
+
+
+# The following is based on the "Automatic Remaking" node in the GNU
+# Autoconf documentation:
+
+$(srcdir)/configure: configure.in
+	cd $(srcdir) && autoconf
+
+# autoheader might not change config.h.in, so touch a stamp file.
+${srcdir}/config.h.in: stamp-h.in
+${srcdir}/stamp-h.in: configure.in
+	cd ${srcdir} && autoheader
+	date > ${srcdir}/stamp-h.in
+
+config.h: stamp-h
+stamp-h: config.h.in config.status
+	./config.status
+
+Makefile: Makefile.in config.status
+	./config.status
+
+config.status: configure
+	./config.status --recheck
+

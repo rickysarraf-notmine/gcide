@@ -1,0 +1,22 @@
+0x00000000 has 0 bits set
+0x00000001 has 1 bits set
+0x00000003 has 2 bits set
+0x00000007 has 3 bits set
+0x0000000f has 4 bits set
+0x0000001f has 5 bits set
+0x0000003f has 6 bits set
+0x0000007f has 7 bits set
+0x000000ff has 8 bits set
+0x800000ff has 9 bits set
+0xc00000ff has 10 bits set
+0xe00000ff has 11 bits set
+0xf00000ff has 12 bits set
+0xf80000ff has 13 bits set
+
+0xf80000fe has 12 bits set
+0x780000fe has 11 bits set
+0x780000fc has 10 bits set
+0x780000ec has 9 bits set
+0x7800006c has 8 bits set
+
+0x7800006c has 8 bits set

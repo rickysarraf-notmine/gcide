@@ -1,0 +1,160 @@
+% user.tex -- User Manual for Libmaa
+% Created: Tue Jan  3 11:07:54 1995 by faith@cs.unc.edu
+% Revised: Wed May 21 00:49:39 1997 by faith@acm.org
+% Copyright 1995, 1997 Rickard E. Faith (faith@acm.org)
+%
+% This program is free software; you can redistribute it and/or modify it
+% under the terms of the GNU General Public License as published by the
+% Free Software Foundation; either version 2, or (at your option) any
+% later version.
+% 
+% This program is distributed in the hope that it will be useful, but
+% WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+% General Public License for more details.
+% 
+% You should have received a copy of the GNU General Public License along
+% with this program; if not, write to the Free Software Foundation, Inc.,
+% 675 Mass Ave, Cambridge, MA 02139, USA.
+%
+% $Id: libmaa.tex,v 1.3 1997/05/21 05:01:33 faith Exp $
+%
+\def\FileCreated{Tue Jan  3 11:07:54 1995}
+\def\FileRevised{Wed May 21 00:49:39 1997}
+
+\documentclass[draft]{article}
+\usepackage{xspace}
+%\usepackage{program}
+\usepackage{verbatim}
+\usepackage{lgrind}
+\usepackage{epic}
+\usepackage{eepicemu}
+\usepackage{outline}
+\usepackage{ifthen}
+
+\addtolength{\textwidth}{0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+
+\DeclareFontShape{OT1}{cmtt}{bx}{n}{
+  <5><6><7><8>cmbtt8
+  <9>cmbtt9
+  <10><10.95><12><14.4><17.28><20.74><24.88>cmbtt10
+  }{}
+\DeclareFontShape{OT1}{cmr}{bx}{sc}{
+  <5><6><7><8><9><10><10.95><12>
+  <14.4><17.28><20.74><24.88> cmbcsc10
+  }{}
+
+\newcommand{\prog}[1]{\texttt{#1}\xspace}
+\newcommand{\system}[1]{\textsc{#1}\xspace}
+%\newcommand{\keyword}[1]{\texttt{#1}\xspace}
+\newcommand{\figref}[1]{Fig.~\ref{#1}\xspace}
+
+\newcommand{\libmaa}{\textsc{libmaa}\xspace}
+\newcommand{\khepera}{\textsc{Khepera}\xspace}
+\newcommand{\kheperalong}{\textsc{Khepera} Transformation System\xspace}
+\newcommand{\Khepera}{Kheper\.a\xspace}
+\newcommand{\Ra}{R\=a\xspace}
+\newcommand{\Maa}{Maa\xspace}
+
+% systems
+\newcommand{\refine}{\system{Refine}}
+\newcommand{\dtre}{\system{dtre3}}
+\newcommand{\eli}{\system{Eli}}
+\newcommand{\cocktail}{\system{Cocktail}}
+\newcommand{\txl}{\system{txl}}
+\newcommand{\ZAP}{\system{zap}}
+\newcommand{\dialect}{\system{Dialect}}
+\newcommand{\pccts}{\system{pccts}}
+\newcommand{\sorcerer}{\system{Sorcerer}}
+\newcommand{\trans}{\system{Trans}}
+\newcommand{\sagepp}{\system{Sage}$++$}
+
+% programs
+\newcommand{\texinfo}{\TeX{}Info}
+\newcommand{\info}{\prog{info}}
+\newcommand{\yacc}{\prog{yacc}}
+\newcommand{\byacc}{\prog{byacc}}
+\newcommand{\bison}{\prog{bison}}
+\newcommand{\make}{\prog{make}}
+\newcommand{\lex}{\prog{lex}}
+\newcommand{\mpl}{\prog{mpl}}
+\newcommand{\pvm}{\prog{pmv}}
+\newcommand{\mpi}{\prog{mpi}}
+\newcommand{\pthreads}{\prog{pthreads}}
+
+% Misc
+\newcommand{\LISP}{\textsc{Lisp}\xspace}
+\newcommand{\proteus}{\textsc{Proteus}\xspace}
+\newcommand{\unix}{\textsc{Unix}\xspace}
+\newcommand{\AST}{\textsc{ast}\xspace}
+\newcommand{\cse}{\textsc{cse}\xspace}
+\newcommand{\postscript}{\textsc{PostScript}\xspace}
+\newcommand{\nesl}{\textsc{Nesl}\xspace}
+\newcommand{\fortran}{\textsc{Fortran}\xspace}
+\newcommand{\hpf}{\textsc{HPF}\xspace}
+\newcommand{\maspar}{\textsc{MasPar}\xspace}
+
+\newcommand{\keyword}[1]{\mbox{\normalshape\bf #1}}
+\newcommand{\INT}{\keyword{int}\ }
+\newcommand{\FLOAT}{\keyword{float}\ }
+\newcommand{\DOUBLE}{\keyword{double}\ }
+\newcommand{\CHAR}{\keyword{char}\ }
+\newcommand{\CONST}{\keyword{const}\ }
+\newcommand{\UNSIGNED}{\keyword{unsigned}\ }
+\newcommand{\VOID}{\keyword{void}\ }
+\newcommand{\RETURN}{\keyword{return}\ }
+\newcommand{\CBEGIN}{\{\ \qtab}
+\newcommand{\CEND}{\untab\}}
+\usepackage{fancybox}
+
+\newenvironment{Module}%
+{\rule{0pt}{5.25ex}%
+  \begin{Sbox}\rule[-2ex]{0pt}{5ex}\begin{minipage}{6.75em}\begin{center}}%
+{\end{center}\end{minipage}\end{Sbox}\fbox{\TheSbox}}
+
+\newenvironment{Comment}{\begin{minipage}{4.4em}\begin{center}}%
+{\end{center}\end{minipage}}
+
+\begin{document}
+\bibliographystyle{refalpha} \title{Libmaa User's Manual}
+
+\author{Rickard E. Faith\thanks{Cray Fellow; supported by ARPA via ONR
+    contract N00014-92-C-0182, by Rome Labs contract F30602-94-C-0037, and
+    by a Cray Fellowship from Cray Research, Inc. and NCSC (North Carolina
+    Supercomputing Center)..}
+  \\ Department of Computer Science
+  \\ University of North Carolina at Chapel Hill}
+\date{TR96-009 \\ DRAFT: \FileRevised \\ $Revision: 1.3 $}
+
+\maketitle\tableofcontents
+
+\clearpage
+
+\begin{abstract}
+  The \libmaa library provides many low-level data structures which are
+  helpful for writing compilers, including hash tables, sets, lists,
+  debugging support, and memory management.  Although \libmaa was designed
+  and implemented as a foundation for the \kheperalong, the data structures
+  are generally applicable to a wide range of programming problems.
+
+  The memory management routines are especially helpful for improving the
+  performance of memory-intensive applications.
+\end{abstract}
+
+\clearpage
+\section{Functions}
+\input general.tex
+
+\clearpage
+\appendix
+
+\section{\Maa}
+
+When \Khepera rose up out of the watery abyss of Nu, he created \Maa as a
+foundation upon which to create everything else
+\cite[pp.~295--8]{faith:Budge04b}.
+
+\bibliography{libmaa}
+
+\end{document}

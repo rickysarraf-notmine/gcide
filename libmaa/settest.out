@@ -1,0 +1,539 @@
+Running test for count of 100
+"key100" is not a member of the set
+key80
+key71
+key62
+key53
+key44
+key9
+key35
+key26
+key97
+key17
+key88
+key79
+key0
+key50
+key8
+key41
+key6
+key32
+key23
+key94
+key14
+key85
+key76
+key67
+key58
+key49
+key5
+key31
+key3
+key22
+key13
+key20
+key91
+key11
+key82
+key73
+key64
+key55
+key46
+key37
+key28
+key99
+key19
+key2
+key90
+key10
+key81
+key72
+key63
+key70
+key54
+key61
+key45
+key52
+key36
+key43
+key27
+key34
+key18
+key25
+key96
+key16
+key87
+key78
+key69
+key60
+key51
+key42
+key7
+key33
+key40
+key24
+key95
+key15
+key86
+key93
+key77
+key84
+key68
+key75
+key59
+key66
+key57
+key48
+key39
+key4
+key30
+key21
+key92
+key12
+key83
+key74
+key65
+key56
+key47
+key38
+key29
+key98
+key89
+key1
+   5 resizings to 347 total
+   100 entries (88 buckets used, 76 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   101 retrievals (86 from top, 1 failed)
+item0 = GX0|b<V*odpNKS+gE&
+item1 = fd,blL0YKbe
+item2 = =0'L
+item3 = *;A{ilNtTs{vZ_"=LNM%y
+item4 = jy;()B(
+item5 = 2qA-Z.[ObOJX**ZHV
+item6 = v\#'
+item7 = |BO&eW\ejM&x(4
+item8 = Xw##O.-*Vd4M@7Tg4v
+item9 = :\nvAYDGQ
+item10 = \%%S)(#86.ozB<:Y
+item11 = "mg9(C'eaC,2pi8v=A~@Y4NI.q
+item12 = IKUK8<dA`l@EMdR`U<xKY:I
+item13 = t^I=m:"6eXa~uF@V2`{`EN@zj9EDTo
+item14 = IMgg;"jQhB3
+item15 = 8Y&nlgjL,8m'#'MG\<e%jMl%
+item16 = WW8yj2D% 1mj]z"
+item17 = "%SOL/k24V_!\/X
+item18 = HR~GdBMd
+item19 = :O15R]7W0f$@R7U)wV
+item20 = &/yObwvG:C,n^[s-]+enri
+item21 = D cNw:
+item22 = ~I,M,$DS
+item23 = g_,E:,8HiD-
+item24 = 6we[xH)pb=o,I=9Malk
+item25 = Lxmg$&/mK=Ea4*
+item26 = ,SE}6clC,)
+item27 = ZjIF3u>!\C'k0S(V4=aQ
+item28 = 5vGKZ4of=KA(th;
+item29 = '<FJD2[w:1,Xr]"(TJS.^Cu|n
+item30 = %c@M&]sQ
+item31 = %,
+item32 = @>&y1d|98GmF%0<"~S'bRH0Y%$*()7
+item33 = JU
+item34 = Dfm@
+item35 = %glLm|ho{<w^n?nHErRM|iPG>Yk%G,%
+item36 = sryaobPk~HImg85,
+item37 = hZ'Q*
+item38 = pd:v+F{X:mR{]5LH
+item39 = tq"\)7i4
+item40 = C<QNjB2%8=K3vf!Ia^^-&s"xu^"-H7-
+item41 = S^9>!KC9ioM`UO)6-hD4[G-Q&
+item42 = ^NGk9zJ
+item43 = 8K\eiK3I bS6p<[$x
+item44 = 2I
+item45 = B(Vi
+item46 = pd>C}jBYP,$cU$E);5Ew:=yLg"oo
+item47 = XcI=!m:l/t<<xq}D{9
+item48 = @0t^*AF,05eix/&z|Af,
+item49 = #H.":,G5
+item50 = !VVv4a7ZmHpS1
+item51 = b8c_YJkoM3}PN)wcOy9&pNg'
+item52 = UPy)
+item53 = blzFKSp6C>J@nxJf[z`u!P
+item54 = hXL>(FGi(3dN^
+item55 = ?uZ]@{L8F
+item56 = t@sjAD-*
+item57 = ZI$!pn)$RXcjxXEUxA"1g5&()pJM~T
+item58 = Y}NZn=drp=VZ5. 
+item59 = 'Am9("?0+/[X-/"g-QA|n%o^C
+item60 = 9XT9C\Z0uc24t
+item61 = DOwR_z9mKZi
+item62 = `Yy$~2\SL
+item63 = '/$kB9
+item64 = `]/W/oRI\}#F8d1h~DER
+item65 = DaxTfdwDW]S/lBa5_9Fw~F)gD
+item66 = -v?QX8&>|}>@U{te
+item67 = 7G~6&8]~6#(~GV+>u]w.d6*a
+item68 = K7P?|8VD6mKOJIeNRd
+item69 = (o4~M,,1B6swb*H!'aXKwFwGq@,?
+item70 = q5{`Jy.W%?y<3q~=9 EzYqr h9q
+item71 = F1|7
+item72 = wxqq'HvFB3Z42w
+item73 = 2=Il.<lwV] |o}45
+item74 = -'f4O][rp5&"-T5K}!Y9nQpLRl;O
+item75 = QD
+item76 = X*C(h
+item77 = X5![CUqnSsGmay]-KJHzLy?[RI~Z2~
+item78 = j3VFV,8E`+mMmf+z1V
+item79 = ,"=K]ou\I'[~r
+item80 = T9F`QkA\XnJ>zDPQh\T%'1t|n>
+item81 = J<v
+item82 = q/_R`Js=#
+item83 = gA],r.tNbyUtnRc,V-ILG;
+item84 = &n;QbYUD@w"Li1A7t:mi
+item85 = ?L6u
+item86 = `A!|}(j9ZLr/q2&s_o% 
+item87 = y;sb
+item88 = 2/[(i;Jj7Gs"`
+item89 = NR\@eb4DR9EX2`Lu
+item90 = _$`
+item91 = m{1X3YL59ydlV%Q89vkS;Cf{
+item92 = [ O``7M\I&o"R%<Li("oZ;(P&[l
+item93 = Bg:}hi]I!+%J2uM
+item94 = zi1dr4SLO[}V7i YQ;W:$5c
+item95 = AhP
+item96 = ]~8XgJ<Z^o'.K$ecne
+item97 = @ uZ%*>+K'\
+item98 = dZ8<BbY|AH#Pt(5Ww{u7|jr"t1.@8k@
+item99 = FX9h;se];i.0rCgi?]!<Gt><%M\=8|:
+lookup0 = GX0|b<V*odpNKS+gE&
+lookup1 = fd,blL0YKbe
+lookup2 = =0'L
+lookup3 = *;A{ilNtTs{vZ_"=LNM%y
+lookup4 = jy;()B(
+lookup5 = 2qA-Z.[ObOJX**ZHV
+lookup6 = v\#'
+lookup7 = |BO&eW\ejM&x(4
+lookup8 = Xw##O.-*Vd4M@7Tg4v
+lookup9 = :\nvAYDGQ
+lookup10 = \%%S)(#86.ozB<:Y
+lookup11 = "mg9(C'eaC,2pi8v=A~@Y4NI.q
+lookup12 = IKUK8<dA`l@EMdR`U<xKY:I
+lookup13 = t^I=m:"6eXa~uF@V2`{`EN@zj9EDTo
+lookup14 = IMgg;"jQhB3
+lookup15 = 8Y&nlgjL,8m'#'MG\<e%jMl%
+lookup16 = WW8yj2D% 1mj]z"
+lookup17 = "%SOL/k24V_!\/X
+lookup18 = HR~GdBMd
+lookup19 = :O15R]7W0f$@R7U)wV
+lookup20 = &/yObwvG:C,n^[s-]+enri
+lookup21 = D cNw:
+lookup22 = ~I,M,$DS
+lookup23 = g_,E:,8HiD-
+lookup24 = 6we[xH)pb=o,I=9Malk
+lookup25 = Lxmg$&/mK=Ea4*
+lookup26 = ,SE}6clC,)
+lookup27 = ZjIF3u>!\C'k0S(V4=aQ
+lookup28 = 5vGKZ4of=KA(th;
+lookup29 = '<FJD2[w:1,Xr]"(TJS.^Cu|n
+lookup30 = %c@M&]sQ
+lookup31 = %,
+lookup32 = @>&y1d|98GmF%0<"~S'bRH0Y%$*()7
+lookup33 = JU
+lookup34 = Dfm@
+lookup35 = %glLm|ho{<w^n?nHErRM|iPG>Yk%G,%
+lookup36 = sryaobPk~HImg85,
+lookup37 = hZ'Q*
+lookup38 = pd:v+F{X:mR{]5LH
+lookup39 = tq"\)7i4
+lookup40 = C<QNjB2%8=K3vf!Ia^^-&s"xu^"-H7-
+lookup41 = S^9>!KC9ioM`UO)6-hD4[G-Q&
+lookup42 = ^NGk9zJ
+lookup43 = 8K\eiK3I bS6p<[$x
+lookup44 = 2I
+lookup45 = B(Vi
+lookup46 = pd>C}jBYP,$cU$E);5Ew:=yLg"oo
+lookup47 = XcI=!m:l/t<<xq}D{9
+lookup48 = @0t^*AF,05eix/&z|Af,
+lookup49 = #H.":,G5
+lookup50 = !VVv4a7ZmHpS1
+lookup51 = b8c_YJkoM3}PN)wcOy9&pNg'
+lookup52 = UPy)
+lookup53 = blzFKSp6C>J@nxJf[z`u!P
+lookup54 = hXL>(FGi(3dN^
+lookup55 = ?uZ]@{L8F
+lookup56 = t@sjAD-*
+lookup57 = ZI$!pn)$RXcjxXEUxA"1g5&()pJM~T
+lookup58 = Y}NZn=drp=VZ5. 
+lookup59 = 'Am9("?0+/[X-/"g-QA|n%o^C
+lookup60 = 9XT9C\Z0uc24t
+lookup61 = DOwR_z9mKZi
+lookup62 = `Yy$~2\SL
+lookup63 = '/$kB9
+lookup64 = `]/W/oRI\}#F8d1h~DER
+lookup65 = DaxTfdwDW]S/lBa5_9Fw~F)gD
+lookup66 = -v?QX8&>|}>@U{te
+lookup67 = 7G~6&8]~6#(~GV+>u]w.d6*a
+lookup68 = K7P?|8VD6mKOJIeNRd
+lookup69 = (o4~M,,1B6swb*H!'aXKwFwGq@,?
+lookup70 = q5{`Jy.W%?y<3q~=9 EzYqr h9q
+lookup71 = F1|7
+lookup72 = wxqq'HvFB3Z42w
+lookup73 = 2=Il.<lwV] |o}45
+lookup74 = -'f4O][rp5&"-T5K}!Y9nQpLRl;O
+lookup75 = QD
+lookup76 = X*C(h
+lookup77 = X5![CUqnSsGmay]-KJHzLy?[RI~Z2~
+lookup78 = j3VFV,8E`+mMmf+z1V
+lookup79 = ,"=K]ou\I'[~r
+lookup80 = T9F`QkA\XnJ>zDPQh\T%'1t|n>
+lookup81 = J<v
+lookup82 = q/_R`Js=#
+lookup83 = gA],r.tNbyUtnRc,V-ILG;
+lookup84 = &n;QbYUD@w"Li1A7t:mi
+lookup85 = ?L6u
+lookup86 = `A!|}(j9ZLr/q2&s_o% 
+lookup87 = y;sb
+lookup88 = 2/[(i;Jj7Gs"`
+lookup89 = NR\@eb4DR9EX2`Lu
+lookup90 = _$`
+lookup91 = m{1X3YL59ydlV%Q89vkS;Cf{
+lookup92 = [ O``7M\I&o"R%<Li("oZ;(P&[l
+lookup93 = Bg:}hi]I!+%J2uM
+lookup94 = zi1dr4SLO[}V7i YQ;W:$5c
+lookup95 = AhP
+lookup96 = ]~8XgJ<Z^o'.K$ecne
+lookup97 = @ uZ%*>+K'\
+lookup98 = dZ8<BbY|AH#Pt(5Ww{u7|jr"t1.@8k@
+lookup99 = FX9h;se];i.0rCgi?]!<Gt><%M\=8|:
+   5 resizings to 347 total
+   100 entries (87 buckets used, 74 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   100 retrievals (75 from top, 0 failed)
+int0 = 9136939
+int1 = 6951572
+int2 = 9797458
+int3 = 2924202
+int4 = 16134833
+int5 = 11578460
+int6 = 4908661
+int7 = 9437436
+int8 = 1835159
+int9 = 13813621
+int10 = 11994451
+int11 = 14124016
+int12 = 8071401
+int13 = 7528608
+int14 = 8945981
+int15 = 1946409
+int16 = 12509545
+int17 = 6572894
+int18 = 1141724
+int19 = 5881069
+int20 = 12401852
+int21 = 11949136
+int22 = 2162214
+int23 = 11663235
+int24 = 13364545
+int25 = 7728542
+int26 = 2852630
+int27 = 10036785
+int28 = 7557431
+int29 = 11701118
+int30 = 12139658
+int31 = 16694370
+int32 = 1875475
+int33 = 5159900
+int34 = 2841356
+int35 = 1233092
+int36 = 16738343
+int37 = 7750017
+int38 = 10670527
+int39 = 1796303
+int40 = 4786422
+int41 = 5887763
+int42 = 15920302
+int43 = 12857823
+int44 = 13416370
+int45 = 8089068
+int46 = 14804232
+int47 = 9148717
+int48 = 14661961
+int49 = 15945938
+int50 = 15029785
+int51 = 10286598
+int52 = 11117858
+int53 = 414767
+int54 = 5172617
+int55 = 7705188
+int56 = 8143308
+int57 = 8025247
+int58 = 964757
+int59 = 15700739
+int60 = 2949133
+int61 = 13104415
+int62 = 15617893
+int63 = 4824607
+int64 = 1487099
+int65 = 1682034
+int66 = 6057699
+int67 = 1448226
+int68 = 9432050
+int69 = 16728226
+int70 = 3244529
+int71 = 14218472
+int72 = 5838773
+int73 = 2387633
+int74 = 10299080
+int75 = 2477928
+int76 = 10476683
+int77 = 8326096
+int78 = 11626644
+int79 = 8361429
+int80 = 7494819
+int81 = 9879213
+int82 = 1870811
+int83 = 1835478
+int84 = 10293980
+int85 = 7043428
+int86 = 9540666
+int87 = 1660072
+int88 = 15068657
+int89 = 10505423
+int90 = 583596
+int91 = 1240592
+int92 = 6832639
+int93 = 16201489
+int94 = 6065199
+int95 = 8319738
+int96 = 1106290
+int97 = 12122897
+int98 = 9767964
+int99 = 10538340
+intlookup0 = 9136939
+intlookup1 = 6951572
+intlookup2 = 9797458
+intlookup3 = 2924202
+intlookup4 = 16134833
+intlookup5 = 11578460
+intlookup6 = 4908661
+intlookup7 = 9437436
+intlookup8 = 1835159
+intlookup9 = 13813621
+intlookup10 = 11994451
+intlookup11 = 14124016
+intlookup12 = 8071401
+intlookup13 = 7528608
+intlookup14 = 8945981
+intlookup15 = 1946409
+intlookup16 = 12509545
+intlookup17 = 6572894
+intlookup18 = 1141724
+intlookup19 = 5881069
+intlookup20 = 12401852
+intlookup21 = 11949136
+intlookup22 = 2162214
+intlookup23 = 11663235
+intlookup24 = 13364545
+intlookup25 = 7728542
+intlookup26 = 2852630
+intlookup27 = 10036785
+intlookup28 = 7557431
+intlookup29 = 11701118
+intlookup30 = 12139658
+intlookup31 = 16694370
+intlookup32 = 1875475
+intlookup33 = 5159900
+intlookup34 = 2841356
+intlookup35 = 1233092
+intlookup36 = 16738343
+intlookup37 = 7750017
+intlookup38 = 10670527
+intlookup39 = 1796303
+intlookup40 = 4786422
+intlookup41 = 5887763
+intlookup42 = 15920302
+intlookup43 = 12857823
+intlookup44 = 13416370
+intlookup45 = 8089068
+intlookup46 = 14804232
+intlookup47 = 9148717
+intlookup48 = 14661961
+intlookup49 = 15945938
+intlookup50 = 15029785
+intlookup51 = 10286598
+intlookup52 = 11117858
+intlookup53 = 414767
+intlookup54 = 5172617
+intlookup55 = 7705188
+intlookup56 = 8143308
+intlookup57 = 8025247
+intlookup58 = 964757
+intlookup59 = 15700739
+intlookup60 = 2949133
+intlookup61 = 13104415
+intlookup62 = 15617893
+intlookup63 = 4824607
+intlookup64 = 1487099
+intlookup65 = 1682034
+intlookup66 = 6057699
+intlookup67 = 1448226
+intlookup68 = 9432050
+intlookup69 = 16728226
+intlookup70 = 3244529
+intlookup71 = 14218472
+intlookup72 = 5838773
+intlookup73 = 2387633
+intlookup74 = 10299080
+intlookup75 = 2477928
+intlookup76 = 10476683
+intlookup77 = 8326096
+intlookup78 = 11626644
+intlookup79 = 8361429
+intlookup80 = 7494819
+intlookup81 = 9879213
+intlookup82 = 1870811
+intlookup83 = 1835478
+intlookup84 = 10293980
+intlookup85 = 7043428
+intlookup86 = 9540666
+intlookup87 = 1660072
+intlookup88 = 15068657
+intlookup89 = 10505423
+intlookup90 = 583596
+intlookup91 = 1240592
+intlookup92 = 6832639
+intlookup93 = 16201489
+intlookup94 = 6065199
+intlookup95 = 8319738
+intlookup96 = 1106290
+intlookup97 = 12122897
+intlookup98 = 9767964
+intlookup99 = 10538340
+   5 resizings to 347 total
+   100 entries (89 buckets used, 78 without overflow)
+   maximum list length is 2 (optimal is 1.1)
+   100 retrievals (79 from top, 0 failed)
+
+Set 1:
+bar
+foo
+
+Set 1 (again):
+bar
+foo
+
+Set 2:
+bar
+t2-foo
+Set 1 == Set 2 ? ===> 0
+Set 1 == Set 1 ? ===> 1
+
+Union:
+foo
+bar
+t2-foo
+
+Intersection:
+bar
+
+Difference:
+foo

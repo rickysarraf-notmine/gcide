@@ -1,0 +1,106 @@
+# Makefile.in -- Makefile for Khepera documentation
+# Created: Sun Jan  8 21:44:38 1995 by faith@cs.unc.edu
+# Revised: Wed May 21 00:56:52 1997 by faith@acm.org
+# Copyright 1995, 1996, 1997 Rickard E. Faith (faith@acm.org)
+# 
+# This program is free software; you can redistribute it and/or modify it
+# under the terms of the GNU General Public License as published by the
+# Free Software Foundation; either version 1, or (at your option) any
+# later version.
+#
+# This program is distributed in the hope that it will be useful, but
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+# General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along
+# with this program; if not, write to the Free Software Foundation, Inc.,
+# 675 Mass Ave, Cambridge, MA 02139, USA.
+# 
+# $Id: Makefile.in,v 1.9 1997/05/21 05:01:29 faith Exp $
+#
+
+.SUFFIXES:
+
+srcdir=		@srcdir@
+VPATH=		@srcdir@
+prefix=		@prefix@
+exec_prefix=	@exec_prefix@
+LATEX=		@LATEX@
+PERL=		@PERL@
+FIG2DEV=	@FIG2DEV@
+DVIPS=          @DVIPS@
+REFBIBTEX=      @REFBIBTEX@
+BIBTEX=         @BIBTEX@
+
+SHELL=	/bin/sh
+
+LIBMAA_SOURCES= ../maa.h ../maa.c ../arg.c ../base26.c ../base64.c \
+	../bit.c ../debug.c ../error.c ../flags.c ../hash.c ../list.c \
+	../memory.c ../parse-concrete.c ../parse.c ../pr.c ../prime.c \
+	../set.c ../sl.c ../source.c ../stack.c ../string.c ../text.c \
+	../timer.c
+
+FIGS=
+SLIDEFIGS=
+
+TEMPORARIES=general.tex
+
+libmaa.dvi: libmaa.tex $(TEMPORARIES) $(FIGS)
+
+all: libmaa.dvi
+
+libmaa.bib:
+	if $(REFBIBTEX) -j libmaa.tex $(TEMPORARIES) > $@.tmp; then \
+		touch $@; \
+	fi
+	cmp -s $@ $@.tmp || mv $@.tmp $@
+	-rm -f $@.tmp
+
+general.tex: $(LIBMAA_SOURCES)
+	$(PERL) extract.pl $(LIBMAA_SOURCES) > general.tex
+
+%.300dpi.ps: %.dvi
+	if fgrep 'LANDSCAPE MODE' $*.log > /dev/null; then \
+		$(DVIPS) -D300 -t landscape -o $@ $*; \
+	else \
+		$(DVIPS) -D300 -o $@ $*; \
+	fi
+
+%.600dpi.ps: %.dvi
+	if fgrep 'LANDSCAPE MODE' $*.log > /dev/null; then \
+		$(DVIPS) -D600 -t landscape -o $@ $*; \
+	else \
+		$(DVIPS) -D600 -o $@ $*; \
+	fi
+
+%.stamp: %.tex
+	test -f $*.stamp || cp $*.aux $*.stamp || touch $*.stamp
+	$(LATEX) $*
+	cmp -s $*.stamp $*.aux || cp $*.aux $*.stamp
+
+%.dvi: %.bbl %.tex %.stamp
+	if fgrep 'LaTeX Warning: Label' $*.log>/dev/null; then $(LATEX) $*; fi
+	if fgrep 'LaTeX Warning: Label' $*.log>/dev/null; then $(LATEX) $*; fi
+	if fgrep 'LaTeX Warning: Label' $*.log>/dev/null; then $(LATEX) $*; fi
+
+%.bbl: %.bib %.stamp
+	test ! -s $*.bib || $(BIBTEX) $*
+
+
+.PRECIOUS: %.aux %.bib %.bbl %.blg
+
+.PHONY: clean distclean
+clean:
+	-rm -f *.o *~ core a.out config.log $(EXES) $(FIGS) $(SLIDEFIGS)
+	-rm -f *.log *.aux *.toc *.dvi *.lj $(TEMPORARIES)
+	-rm -f *.bbl *.blg *.stamp
+
+distclean: clean
+	-rm -f config.h config.cache Makefile
+
+
+# This is from the textutils-1.11 lib/Makefile.in
+subdir=doc
+Makefile: Makefile.in ../config.status
+	cd .. && CONFIG_FILES=$(subdir)/$@ CONFIG_HEADERS= ./config.status

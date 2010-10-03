@@ -1,0 +1,315 @@
+# Database of program templates for lgrind
+
+# $Id: lgrindefs,v 1.1 1996/02/09 14:45:22 faith Exp $
+
+a68:\
+	:oc:\
+	:cb=\|:ce=$:ab=/*:ae=*/:\
+	:sb=':se=':lb=":le=":\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=ascii block byte end equ globl text data word even long\
+	#else #endif #if #ifdef #ifndef #include #undef #define:
+
+asm:\
+	:oc:\
+	:cb=#:ce=$:ab=/*:ae=*/:\
+	:sb=':se=':lb=":le=":\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=ascii block byte end equ globl text data word even long\
+	#else #endif #if #ifdef #ifndef #include #undef #define else endif\
+	if ifdef ifndef include undef define:
+
+asm68:\
+	:pb=(^\d?.proc\d\p\d:\
+	:oc:\
+	:cb=;:ce=$:\
+	:sb=':se=':lb=":le=":\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=ascii block byte end equ include long proc word:
+
+C|c:\
+	:pb=^\d?*?\d?\p\d?\(\a?\)(\d|{):bb={:be=}:\
+	:cb=/*:ce=*/:sb=":se=\e":lb=':\
+	:le=\e':tl:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=asm auto break case char const continue default do double else\
+        enum extern float for fortran goto if int long register return short\
+	sizeof static struct switch typedef union unsigned void while #define\
+	#else #endif #if #ifdef #ifndef #include #undef # define else endif\
+	if ifdef ifndef include undef\
+	#pragma #elif pragma elif\
+	#module #dictionary module dictionary\
+	variant_struct variant_union\
+	noshare readonly globaldef globalref globalvalue main_program:
+#Last couple of lines are partial ANSI, plus VAX-C specific
+
+C++|c++|CC:\
+	:pb=^\d?*?\d?\p\d?\(\a?\)(\d|{):bb={:be=}:\
+	:cb=/*:ce=*/:ab=//:ae=$:sb=":se=\e":lb=':\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:le=\e':tl:\
+	:kw=asm auto break case char continue default do double else enum\
+	extern float for fortran goto if int long register return short\
+	sizeof static struct switch typedef union unsigned while void #define\
+	#else #endif #if #ifdef #ifndef #include #undef # define endif\
+	ifdef ifndef include undef defined\
+	class const delete friend inline new operator overload private\
+	protected public virtual:
+
+CSH|csh:\
+	:bb={:be=}:cb=#:ce=$:sb=":se=\e":lb=':\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:le=\e':tl:\
+	:kw=alias alloc break breaksw case cd chdir continue default\
+	echo else end endif endsw exec exit foreach \
+	glob goto history if logout nice nohup onintr repeat set\
+	setenv shift source switch then time \
+	while umask unalias unset wait while @ env \
+	argv child home ignoreeof noclobber noglob \
+	nomatch path prompt shell status verbose :
+
+fortran|FORTRAN|f77|fc|f:\
+	:pb=(function|subroutine|program)\d\p\d?\(\a?\):\
+	:bb=(function|subroutine|program)\d\p\d?\(\a?\):be=^\dend:\
+	:cb=^c:\
+	:ce=$:\
+	:sb=':\
+	:se=':\
+	:oc:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=call common complex continue dimension do double else elseif\
+	end endif equivalence format function\
+	goto if include integer \
+	parameter precision real return stop subroutine:
+
+Icon|icon|I:\
+	:pb=^\d?procedure\d\p\d?\(\a?\):\
+	:bb=(^\d?procedure\d\p\d?\(\a?\))|{:be=}|(^\d?end\d?$):\
+	:cb=#:ce=$:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=":se=\e":lb=':le=\e':tl:\
+	:kw=break by case create default do dynamic else end every external\
+	fail global if initial local next not of procedure record\
+	repeat return static suspend then to until using while\
+	&ascii &clock &cset &date &dateline &errout &fail &host &input\
+	&lcase &level &main &null &output &pos &random &source &subject\
+	&time &trace &ucase &version:
+
+ISP|isp|i:\
+	:cb=!:ce=!|$:oc:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=and begin decode define end eql eqv geq gtr if leave leq lss mod\
+	neq next not or otherwise repeat restart resume sr0 sr1 srd\
+	srr sl0 sl1 sld slr tst xor:
+
+ldl|LDL:\
+	:pb=^\p\::bb=\::be=;:cb=/*:ce=*/:sb=":se=\e":\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=constant functions grammar reswords tokens add1 addste\
+	car cdr check colno cond cons copy defun divide empty enter\
+	eq equal findattr firstchild ge getattr getfield gt hash label\
+	lambda lastchild le leftsibling lookone lookup lt minus name ne\
+	newnode nextcom nil null parent plus precnl prevcom prog progn\
+	quote reglob return rightsibling self set setattr setfield setq\
+	stjoin sub1 t times tnull tokno ttype:
+
+#Linda is just like C, with a couple of extra keywords.  Note:  The non-
+#blocking operations are included, as are the pre-defined VAX Linda-C macros.
+linda|l:\
+	:pb=^\d?*?\d?\p\d?\(\a?\)(\d|{):bb={:be=}:\
+	:cb=/*:ce=*/:sb=":se=\e":lb=':\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:le=\e':tl:\
+	:kw=asm auto break case char continue default do double else enum\
+	extern float for fortran goto if int long register return short\
+	sizeof static struct switch typedef union unsigned void while #define\
+	#else #endif #if #ifdef #ifndef #include #undef # define else endif\
+	if ifdef ifndef include undef\
+	#pragma #elif pragma elif #line\
+	#module #dictionary module dictionary\
+	variant_struct variant_union\
+	noshare readonly globaldef globalref globalvalue main_program\
+	in inp rd rdp out eval newtype varying nchar\
+	$ARR $ARRAY $ARRAY_TYPE $MAKE_ARRAY\
+	$STR $STRING $STRING_TYPE $SET_DIM $MAKE_STRING\
+	#ttcontext ttcontext:
+
+# Use MFT (part of the MetaFontWare package) instead.
+mf|metafont:\
+	:bb={:be=}:cb=%:ce=$:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw=def if else fi for step until endfor\
+	input let end:
+
+#
+# This entry makes use of new capabilities added to support the description
+# of lisp-like languages (id, pl, and px).  The set of keywords given is a
+# matter of taste.  It would be reasonable to add all the wired functions to
+# the list.
+MLisp|ml|Emacs Mock Lisp:\
+	:cb=;:ce=$:lb=':le=\e':sb=":se=\e":bb=\(:be=\):\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:id=_-$#@./,%&?!^*+~`|;<>'\::\
+	:kw=defun if progn while:pl:px=\d\(defun:pb=^\d\(\p($|(\d\a$)):
+
+model|mod|m:\
+	:pb=^\d(space\d\p\drep)|(\p\dis|inline|public\dbeginproc):\
+	:bb=\dbeginproc|space|case\d:be=\dendproc|end\d|;:\
+	:cb=\$:ce=\$|$:sb=":se=":lb=':le=\a|$:\
+	:kw=abs and array beginproc boolean by case cdnl char copied dispose\
+	div do dynamic else elsif end endproc entry external FALSE false\
+	fi file for formal fortran global if iff ift\
+	in integer include inline is lbnd\
+	max min mod new NIL nil noresult not notin od of or procedure public\
+	read readln readonly record recursive rem rep repeat res\
+	result return set\
+	space string subscript such then TRUE true type ubnd union until\
+	varies while width:
+
+modula2|mod2|m2:\
+	:pb=(^\d?(procedure|function|module)\d\p\d|\(|;|\:):\
+	:bb=\d(begin|case|for|if|loop|record|repeat|while|with)\d:\
+	:be=\dend|;:\
+	:cb={:ce=}:\
+	:ab=\(*:ae=*\):\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=":se=":\
+	:oc:\
+	:kw=and array begin by case const\
+	definition div do else elsif end exit export\
+	for from if implementation import in\
+	loop mod module not of or pointer procedure qualified\
+	record repeat return set then to type\
+	until var while with:
+
+pascal|pasc|p:\
+	:pb=(^\d?procedure|function|program\d\p\d|\(|;|\:)|(=\d?record\d):\
+	:bb=\dcase|begin\d:be=\dend|forward\d|;:\
+	:oc:\
+	:cb={:ce=}:ab=\(*:ae=*\):\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=':se=':lb=":le=":\
+	:kw=and array assert begin boolean case char const div do downto else\
+	end file for forward function goto if in integer label mod nil not\
+	of or packed procedure program record repeat set then to type\
+	until var while with oct hex external:
+
+#Perl definition; snarfed from the net
+PERL|perl|pl:\
+        :pb=^\d?sub\d\p(\d|{):\
+	:bb={:be=}:cb=\d#:ce=$:sb=":se=\e":lb=':le=\e':\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:tl:\
+	:kw=if until while elsif else unless for foreach continue sub\
+        accept atan2 bind chdir chmod chop chown chroot close\
+        closedir connect cos crypt dbmclose dbmopen defined delete die\
+        do dump each eof eval exec exit exp fcntl fileno flock fork\
+        getc getlogin getpeername getpgrp getppid getpriority getpwnam\
+        getgrnam gethostbyname getnetbyname getprotobyname getpwuid getgrgid\
+        getservbyname gethostbyaddr getnetbyaddr getprotobynumber\
+        getservbyport getpwent getgrent gethostent getnetent getprotoent\
+        getservent setpwent setgrent sethostent setnetent setprotoent\
+        setservent endpwent endgrent endhostent endnetent endprotoent\
+        endservent getsockname getsockopt gmtime goto grep hex ioctl\
+        index int join keys kill last length link listen local localtime\
+        log lstat m mkdir next oct open opendir ord pack pop print printf\
+        push q qq rand read readdir readlink recv redo rename reset return\
+        reverse rewinddir rindex rmdir s seek seekdir select setpgrp send\
+        setpriority setsockopt shift shutdown sin sleep socket socketpair\
+        sort split sprintf sqrt srand stat study substr syscall system\
+        symlink tell telldir time times tr y umask undef unlink unpack\
+        unshift utime values vec wait wantarray warn write:
+
+prolog|PROLOG:\
+	:bb=\:-:be=.:cb=%:ce=$:ab=/*:ae=*/:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=":se=\e":lb=':le=\e':oc:\
+	:kw=op mod abort ancestors arg ascii ask assert asserta assertz\
+	atom atomic char clause close concat consult ed ef em eof fail\
+	file findall write functor getc integer is length listing load name\
+	nl nonvar not numbervars op or pp prin print private prompt putc\
+	ratom read read_from_this_file rename repeat retract retractall\
+	save see seeing seen sh skip statistics subgoal_of system tab\
+	tell telling time told trace true unload untrace var write:
+
+ps|postscript:\
+	:oc:\
+	:cb=%:ce=$:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=\(:se=\e\):\
+	:kw=forall array null dict begin end def store string \
+	exec if ifelse repeat for loop exit stop stopped quit \
+	start save restore gsave grestore grestoreall definefont \
+	newpath initgraphics erasepage showpage copypage initclip \
+	clip eoclip fill eofill stroke image imagemask:
+
+r|R|ratfor:\
+	:pb=^\d?program|subroutine|function|(integer|real|complex|character\dfunction)\d\p\d|\(:\
+	:bb={:be=}:cb=#:ce=$:sb=":se=":lb=':le=':oc:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:kw= break call case character common complex data default define\
+	dimension do else end equivalence external false for function go\
+	goto if implicit include integer logical next pause program read\
+	real repeat return rewind stop string subroutine switch true until\
+	while write:
+
+#
+# It's not obvious what constitutes a "procedure definition" in Russell.
+# This entry doesn't even try...
+russell|Russell:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:cb=\(*:ce=*\):kw=cand cor do od if fi else enum record prod union\
+	extend export hide with constants let use in ni val var func type\
+	field characters readonly:sb=":se=":lb=':le=':
+
+SH|sh:\
+	:bb={:be=}:cb=#:ce=$:sb=":se=\e":lb=':\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:le=\e':tl:\
+	:kw=break case cd continue do done \
+	elif else esac eval exec exit export \
+	fi for if in then while until \
+	read readonly set shift test trap umask wait:
+
+SOURCE|source|src:\
+	:kw=:
+
+TEX|tex:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:bb={:be=}:cb=%:ce=$:kw=\\def:
+
+vmsasm:\
+	:pb=^\d?.entry\d\p(\d|,|$|;):\
+	:oc:\
+	:cb=;:ce=$:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:sb=(.ident|.asci(x|c|d|i|z))\d:se=$:\
+	:kw=.address .align .ascix .ascic .ascid .ascii .asciz \
+	.blkx .byte .cross .debug .default .d_floating .double \
+	.disable .enable .end .endc .endm .endr .entry .error \
+	.even .external .f_floating .float .g_floating .ident .if \
+	.if_x .iff .irp .irpc .library .link .list .long .macro \
+	.mask .mcall .mdelete .mexit .narg .nchr .nlist .nocross \
+	.noshow .ntype .octa .odd .opdef .packed .page .print \
+	.psect .quad .refn .repeat .restore_psect .save_psect \
+	.show .signed_byte .signed_word .subtitle .title .transfer \
+	.warn .weak .word:
+
+yacc|Yacc|y:\
+	:zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%:\
+	:cb=/*:ce=*/:sb=":se=\e":lb=':le=\e':tl:\
+	:kw=%{ %} %% %union %token %type\
+	#else #endif #if #ifdef #ifndef #include #undef #define else endif\
+	if ifdef ifndef include undef:
+
+proteus:\
+        :am::bb={:be=}:cb=--:ce=$:id=_:\
+	:cb=--:ce=$:\
+	:kw= boolean bool div do else false for forall function if in \
+        integer int lambda let om real return string then true type var \
+        while #define #else #endif #if #ifdef #ifndef #include #undef # \
+        define else endif if ifdef ifndef include undef #pragma #elif \
+        pragma elif:\
+        pb=function\d\p:sb=":se=\e":\
+	zb=@:ze=@:tb=%%:te=%%:mb=%\$:me=\$%:vb=%\|:ve=\|%
+

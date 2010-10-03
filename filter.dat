@@ -1,0 +1,337 @@
+15  hex-15     [sect]  #       section symbol
+
+3c  lt         .lt.      # <     less than
+3e  gt         .gt.      # >     greater than
+                
+80  Ccedil     [,C]      # C     C cedilla
+81  uuml       ["u]      # ue    u umlaut (diaeresis)
+82  eacute     ['e]       # e     e acute
+83  acirc      [^a]       # a     a circumflex
+84  auml       ["a]       # ae    a umlaut (diaeresis)
+85  agrave     [`a]       # a     a grave
+86  aring      [*a]       # a     a ring above
+87  ccedil     [,c]     # c     c cedilla
+88  ecirc      [^e]       # e     e circumflex
+89  euml       ["e]       # e     e umlaut (diaeresis)
+8a  egrave     [`e]       # e     e grave
+8b  iuml       ["i]       # i     i umlaut (diaeresis)
+8c  icirc      [^i]       # i     i circumflex
+8d  igrave     [`i]       # i     i grave
+8e  Auml       ["A]       # A     A umlaut
+8f  Aring      [*A]       # A     A ring above
+
+90  Eacute     ['E]       # e      E acute
+91  aelig      [ae]       # ae     ligature ae
+92  AElig      [AE]       # AE     ligature AE
+93  ocirc      [^o]       # o      o circumflex
+94  ouml       ["o]       # oe     o umlaut (diaeresis)
+95  ograve     [`o]       # o      o grave
+96  ucirc      [^u]       # u      u circumflex
+97  ugrave     [`u]       # u      u grave
+98  yuml       ["y]       # y      y umlaut
+99  Ouml       ["O]       # O      O umlaut
+9a  uuml       ["U]       # U      U umlaut (diaeresis)
+# 9b             
+9c  pound      [pounds]  # *      pound sign (British)
+# 9d             
+# 9e             
+# 9f
+
+a0  aacute     ['a]        # a     a acute
+a1  iacute     ['i]        # i     i acute
+a2  oacute     ['o]        # o     o acute
+a3  uacute     ['u]        # u     u acute
+a4  ntilde     [~n]        # ny    n tilde
+a5  Ntilde     [~N]        # NY    N tilde
+a6  frac23     2/3        #   $\frac{2}{3}$    2/3   two-thirds
+a7  frac13     1/3        #   $\frac{1}{3}$    1/3   one-third
+# a8 
+a9  Prime      '          #   seconds (of degree or time)
+# aa 
+ab  frac12     1/2        # $\frac{1}{2}$  1/2  one-half
+ac  frac34     3/4        # $\frac{1}{4}$  1/4  one-quarter
+# ad 
+# ae 
+# af 
+
+# b0                                          (?)  Place-holder
+# b1 
+# b2 
+# b3 
+# b4                           $\updownarrow$  *   verticle arrow
+b5 hand       [hand]       # *   pointing hand
+b6 hex-b6     " # \"{}         #  ''   bold accent 
+b7 prime      ' # \'{}         #  '   light accent 
+b8 hex-b8     ''           #  "   close double quote
+# b9 
+ba hex-ba     ||           #  $\parallel$   ||   verticle double bar (l)
+# bb 
+bc sect       [sect] #                  \S             *    section mark
+bd hex-bd     ``           #  "    open double quotes
+be amacr      [=a]          #  a    a macron
+bf lsquo      `            #  `    left single quote
+
+# c0                                           ng   "n sub-macron"
+c1 sharp     [sharp]        # $\sharp$      #      musical sharp
+c2 flat      [flat]         # $\flat$       *     musical flat
+c3 hex-c3    --             # --            --    long dash (en-dash? )
+c4 hex-cs    -              # $-$            -    horizontal line
+c5 th        [th]           # first part of th ligature
+c6 imacr     [=i]            # i    i macron
+c7 emacr     [=e]            # e    e macron
+c8 hex-c8    [.d]        # d    Sanskrit/Tamil d dot 
+c9 hex-c9    [.n]        # n    Sanskrit/Tamil n dot
+ca hex-ca    [.t]        # t    Sanskrit/Tamil t dot
+cb ebreve    [e^]          # e    e breve
+cc ibreve    [i^]          # i    i breve
+# cd           
+ce obreve    [o^]          # o    o breve
+cf hex-cf    --             # -    short dash
+
+d0  mdash    ---            # --   long (em) dash
+d1  OElig    [OE]            # OE   OE ligature
+d2  oelig    [oe]            # oe   oe ligature
+d3  omacr    [=o]            # o    o macron
+d4  umacr    [=u]            # u    u macron
+d5  hex-d5   [!o]          # o    o hacek
+d6  hex-d6   [=ae]          # ae   ae ligature macron
+d7  hex-d7   [=oe]          # oe   oe ligature macron
+d8  par      ||             # ||   double vertical
+# d9 
+# da 
+# db 
+dc ubreve    [u^]          # u  u breve
+dd abreve    [a^]          # a  a breve
+de ssmile    [crescent]     # ~  crescent
+df ymacr     [=y]            # y   y macron
+
+# e0                                             a   a "semilong"
+# e1                                                  e "semilong"
+# e2                                                  i "semilong"
+# e3                                                  o "semilong"
+# e4                                                  u "semilong"
+# e5                                             a    a with dot above
+e6 hex-e6    [mu]             # mu  small Greek mu
+# e7 art 2)                                          second part of th ligature
+# e8 
+# e9 
+# ea 
+eb edh       [eth]           # th  small eth
+# ec 
+ed thorn     [thorn]         # th  small thorn
+ee atilde    [~a]             # a   a tilde
+ef ndot      [.n]             # n   n with dot above
+
+f0 hex-f0    [.r]           # r   r with a dot below
+# f1 
+# f2 
+# f3 
+f4 yogh      [yogh]          # y   small yogh
+f5 mdash     ---             # --  em dash
+f6 divide    /               # /   division sign
+f7 ap        [approx]        # $\approx$        ~=  "double tilde"
+f8 hex-f8    [deg]           # ${}^\circ$       *    degree sign
+f9 hex-f9    *               # $\bullet$        *    bold middle dot
+fa hex-fa    *               # $\cdot$         *    light middle dot
+fb radic     [root]          # *    root sign
+# fc 
+# fd 
+# fe 
+# ff 
+
+
+
+2dot          ..
+3dot          ...
+8star         ********
+?             ?
+AE            [AE]
+Aquarius
+Aries
+CHI           [Chi]
+Cancer
+Capricorn
+Crev
+DELTA         [Delta]
+Dagger        [dag]
+EDH           [Edh]
+GAMMA         [Gamma]
+Jupiter
+LAMBDA        [Lambda]
+Leo
+Libra
+OE            [OE]
+OMEGA         [Omega]
+OMICRON       [Omicron]
+Omac          [=O]
+PI            [Pi]
+Pisces
+SIGMA         [Sigma]
+Sagittarius
+Scorpio
+Sun
+TAU           [Tau]
+THETA         [Theta]
+Taurus
+UPSILON       [Upsilon]
+Virgo
+acir          [^a]
+acr           [a^]
+add
+adot          [.a]
+ae            [ae]
+aemac         [=ae]
+ait           a
+alpha
+amac          [=a]
+amc
+and           &
+asl
+asper
+astascending
+astdescending
+asterism
+atil          [~a]
+aum
+bar
+beta
+br
+breve
+cced          [,c]
+chi
+colbeak       [break]
+colbreak      [break]
+colret
+cre           [crescent]
+csdot         [.c]
+cuberoot
+dagger
+deg
+dele
+delta
+div
+divby
+downslur
+dsdot
+ecir          [^e]
+ecr           [e^]
+eit           e
+ema
+emac          [=e]
+epsilon
+esl           [-e]
+eta
+etil          [~e]
+eum
+ffllig
+filig
+fllig
+frac00        0/0
+frac1000x1434 1000/1434
+frac12x13     12/13
+frac14        1/4
+frac15        1/5
+frac16        1/6
+frac17        1/7
+frac17x175    17/175
+frac18        1/8
+frac1x10      1/10
+frac1x10000   1/10000
+frac1x108719  1/108719
+frac1x12      1/2
+frac1x20      1/20
+frac1x216000  1/216000
+frac1x24      1/24
+frac1x2500    1/2500
+frac1x29966   1/29966
+frac1x3600    1/3600
+frac1x50000   1/50000
+frac1x60      1/60
+frac1x6000    1/6000
+frac1x8000    1/8000
+frac25        2/5
+frac2x10      2/10
+frac32        3/2
+frac35        3/5
+frac36        3/6
+frac38        3/8
+frac3x16      3/16
+frac56        5/6
+frac58        5/8
+frac59        5/9
+frac95        9/5
+fract25x100   25/100
+gamma
+hand
+hsdot         [.h]
+icir          [^i]
+icr           [i^]
+imac
+integral2l
+iota
+iques
+isl           [-i]
+ium           ["i]
+kappa
+lambda
+lbrace2
+libra
+ltil          [~l]
+male
+mercury
+min
+msdot         [.m]
+natural
+nbsp
+nsdot         [.n]
+nsm           [ng]
+nsmac         [-n]
+ntil          [~n]
+ocir          [^o]
+ocr           [o^]
+oe            [oe]
+omac          [=o]
+omicron
+oocr          [oo^]
+oomac         [=oo]
+or            or
+osl           [-o]
+oum           ["o]
+para
+pause
+phi
+pi
+pisces
+rbrace2
+rho
+root
+rsdot         [.r]
+sagittarius
+scorpio
+sec
+sigma
+sigmat
+spasp
+tau
+taurus
+th
+theta
+times
+tsdot         [.t]
+ucir          [^u]
+ucr           [u^]
+udd
+umac          [=u]
+umlaut
+upsilon
+upslur
+uring         [*u]
+usdot         [.u]
+usl           [-u]
+uum           ["u]
+xi
+ycr           [y^]
+ymac          [=y]
+yogh
+zeta
+zsdot         [.z]
