@@ -10663,7 +10663,7 @@ Might avail his sickness to <qex>recure</qex>.</q> <rj><qau>Lydgate.</qau></rj><
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Recusant</ent><br/
-<hw>Re*cu"sant</hw> <pr>(-z<it>a</it>t; 277)</pr>, <pos>a.</pos><ety>[L. <ets>recusans</ets>, <ets>-antis</ets>, p. pr. of <ets>recure</ets> to refuse, to oject to; pref. <ets>re-</ets> re + <ets>causa</ets> a cause, pretext: cf. F. <ets>r<eacute/cusant</ets>. See <er>Cause</er>, and cf. <er>Ruse</er>.]</ety> <def>Obstinate in refusal; specifically, in English history, refusing to acknowledge the supremacy of the king in the churc, or to conform to the established rites of the church; <as>as, a <ex>recusant</ex> lord</as>.</def><br/
+<hw>Re*cu"sant</hw> <pr>(-z<it>a</it>t; 277)</pr>, <pos>a.</pos><ety>[L. <ets>recusans</ets>, <ets>-antis</ets>, p. pr. of <ets>recure</ets> to refuse, to oject to; pref. <ets>re-</ets> re + <ets>causa</ets> a cause, pretext: cf. F. <ets>r<eacute/cusant</ets>. See <er>Cause</er>, and cf. <er>Ruse</er>.]</ety> <def>Obstinate in refusal; specifically, in English history, refusing to acknowledge the supremacy of the king in the church, or to conform to the established rites of the church; <as>as, a <ex>recusant</ex> lord</as>.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><q>It stated him to have placed his son in the household of the Countess of Derby, a <qex>recusant</qex> papist.</q> <rj><qau>Sir W. Scott.</qau></rj><br/
