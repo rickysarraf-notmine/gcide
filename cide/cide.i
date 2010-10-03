@@ -895,7 +895,7 @@ Dead perfection, no more.</q> <rj><qau>Tennyson.</qau></rj><br/
 
 <p><ent>I.D.</ent><br/
 <ent>ID</ent><br/
-<mhw><hw>ID</hw>, <hw>I.D.</hw></mhw> <pr>(<imac/`d<emac/")</pr>, <pos>n.</pos> <mark>[capitalized]</mark> <ety>[shortened form of <ets>identification</ets>.]</ety>  <def>any document testifying to teh identity of the bearer, especially a card or badge.</def><br/
+<mhw><hw>ID</hw>, <hw>I.D.</hw></mhw> <pr>(<imac/`d<emac/")</pr>, <pos>n.</pos> <mark>[capitalized]</mark> <ety>[shortened form of <ets>identification</ets>.]</ety>  <def>any document testifying to the identity of the bearer, especially a card or badge.</def><br/
 <syn><b>Syn. --</b> ID.</syn><br/
 [<source>WordNet 1.5</source>]</p>
 
@@ -25165,7 +25165,7 @@ Are base respects of thrift, but none of love.</q> <rj><qau>Shak.</qau></rj><br/
 <hw>In"stant</hw>, <pos>n.</pos> <ety>[F. <ets>instant</ets>, fr. L. <ets>instans</ets> standing by, being near, present. See <er>Instant</er>, <pos>a.</pos>]</ety><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>1.</sn> <def>A point in time; a moment; a portion of time too short to be estimated; also, any particular moment; <as>as, teh situation may change in an <ex>instant</ex></as>.</def><br/
+<p><sn>1.</sn> <def>A point in time; a moment; a portion of time too short to be estimated; also, any particular moment; <as>as, the situation may change in an <ex>instant</ex></as>.</def><br/
 [<source>1913 Webster</source> <source>+PJC</source>]</p>
 
 <p><q>There is scarce an <qex>instant</qex> between their flourishing and their not being.</q> <rj><qau>Hooker.</qau></rj><br/
