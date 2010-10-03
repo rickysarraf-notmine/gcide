@@ -3,8 +3,9 @@ dict-gcide (0.48-7) unstable; urgency=low
   * Take maintenance of this package (Closes: #436119)
   * Minor typo fix upload (Closes: #522191, #521367, #516598, #498041,
     #370829, #370812, #352827, #332386, #320603, #296197)
+  * Add git Vcs field
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 03 Oct 2010 23:38:07 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 03 Oct 2010 23:42:46 +0530
 
 dict-gcide (0.48-6) unstable; urgency=low
 
