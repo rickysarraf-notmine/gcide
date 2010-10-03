@@ -28,5 +28,5 @@ Depends: dictd | dict-server
 Suggests: dict-wn
 Provides: dict-web1913, dictd-dictionary
 Replaces: dict-web1913
-Conflicts: dict-web1913 (<= 1.4-0.47pd-3)
+Breaks: dict-web1913 (<= 1.4-0.47pd-3)
 
