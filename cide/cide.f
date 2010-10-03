@@ -10780,7 +10780,7 @@ Of pale and bloodless emulation.</q> <rj><qau>Shak.</qau></rj><br/
 <p><sn>2.</sn> <def>Having the nature of a trust; fiduciary; <as>as, <ex>fiducial</ex> power</as>.</def>  <rj><au>Spelman.</au></rj><br/
 [<source>1913 Webster</source>]</p>
 
-<p><cs><col><b>Fiducial edge</b></col> <fld>(Astron. & Surv.)</fld>, <cd>the straight edge of the alidade or ruler along which a straight line is to be drawn.</cd> -- <mcol><col><b>Fiducial line</b></col> <it>or</it>  <col><b>Fiducial point</b></col></mcol> <fld>(Math. & Physics.)</fld>, <cd>a line or point of reference, as for setting a graduated circle or scale used for measurments.</cd></cs><br/
+<p><cs><col><b>Fiducial edge</b></col> <fld>(Astron. & Surv.)</fld>, <cd>the straight edge of the alidade or ruler along which a straight line is to be drawn.</cd> -- <mcol><col><b>Fiducial line</b></col> <it>or</it>  <col><b>Fiducial point</b></col></mcol> <fld>(Math. & Physics.)</fld>, <cd>a line or point of reference, as for setting a graduated circle or scale used for measurements.</cd></cs><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Fiducially</ent><br/
