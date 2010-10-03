@@ -7,8 +7,9 @@ dict-gcide (0.48-7) unstable; urgency=low
   * Update Standards Version to 3.9.1 
   * Switch to 3.0 (quilt) source format 
   * Add myself to packaging copyright section 
+  * Update FSF's address in copyright file 
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 03 Oct 2010 23:58:37 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 04 Oct 2010 00:02:05 +0530
 
 dict-gcide (0.48-6) unstable; urgency=low
 
