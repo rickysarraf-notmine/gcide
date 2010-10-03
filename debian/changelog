@@ -9,8 +9,9 @@ dict-gcide (0.48-7) unstable; urgency=low
   * Add myself to packaging copyright section 
   * Update FSF's address in copyright file 
   * Use Breaks instead of Conflicts 
+  * Add debhelper to Build Depends 
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 04 Oct 2010 00:13:23 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 04 Oct 2010 00:17:41 +0530
 
 dict-gcide (0.48-6) unstable; urgency=low
 

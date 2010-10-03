@@ -3,7 +3,7 @@ Section: text
 Priority: optional
 Maintainer: Ritesh Raj Sarraf <rrs@debian.org>
 Standards-Version: 3.9.1
-Build-Depends-Indep: flex, bison, dictzip | dictd (<<1.7.1), quilt
+Build-Depends-Indep: debhelper (>= 7), flex, bison, dictzip | dictd (<<1.7.1), quilt
 Vcs-Git: git://git.debian.org/collab-maint/dict-gcide.git
 Vcs-Browser: http://git.debian.org/?p=collab-maint/dict-gcide.git
 

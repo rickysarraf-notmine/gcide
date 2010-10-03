@@ -109,6 +109,7 @@ stamp-binary-indep:
 	                     debian/$(pkg1)/usr/share/doc/$(pkg1)/copyright
 	dpkg-gencontrol      -isp -p$(pkg1) -Pdebian/$(pkg1)
 	chown -R root.root   debian/$(pkg1)
+	dh_md5sums
 	dpkg --build         debian/$(pkg1) ..
 
 	touch                stamp-binary-indep
