@@ -1,7 +1,7 @@
 Source: dict-gcide
 Section: text
 Priority: optional
-Maintainer: Debian QA Group <packages@qa.debian.org>
+Maintainer: Ritesh Raj Sarraf <rrs@debian.org>
 Standards-Version: 3.8.0
 Build-Depends-Indep: flex, bison, dictzip | dictd (<<1.7.1)
 
