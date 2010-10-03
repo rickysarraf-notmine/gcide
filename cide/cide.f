@@ -12329,7 +12329,7 @@ Yet <qex>filed with</qex> my abilities.</q> <rj><qau>Shak.</qau></rj><br/
 <p><q>It will but skin and <qex>film</qex> the ulcerous place.</q> <rj><qau>Shak.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>2.</sn> <def>to make a motion picture of (any event or literary work); to record with a movie camera; <as>as, to <ex>film</ex> the inauguration ceremony; to <ex>film</ex> Dostoevsky's War and Peace</as>.</def><br/
+<p><sn>2.</sn> <def>to make a motion picture of (any event or literary work); to record with a movie camera; <as>as, to <ex>film</ex> the inauguration ceremony; to <ex>film</ex> Dostoevsky's Crime and Punishment; or Tolstoy's War and Peace</as>.</def><br/
 [<source>PJC</source>]</p>
 
 <p><ent>filmable</ent><br/
