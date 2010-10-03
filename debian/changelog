@@ -5,8 +5,9 @@ dict-gcide (0.48-7) unstable; urgency=low
     #370829, #370812, #352827, #332386, #320603, #296197)
   * Add git Vcs field
   * Update Standards Version to 3.9.1 
+  * Switch to 3.0 (quilt) source format 
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 03 Oct 2010 23:44:39 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sun, 03 Oct 2010 23:52:50 +0530
 
 dict-gcide (0.48-6) unstable; urgency=low
 
