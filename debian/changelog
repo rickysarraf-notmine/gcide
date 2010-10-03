@@ -1,4 +1,4 @@
-dict-gcide (0.48-7) unstable; urgency=low
+dict-gcide (0.48-7) experimental; urgency=low
 
   * Take maintenance of this package (Closes: #436119)
   * Minor typo fix upload (Closes: #522191, #521367, #516598, #498041,
@@ -14,7 +14,7 @@ dict-gcide (0.48-7) unstable; urgency=low
   * Add misc:Depends to Depends 
   * Use Debhelper compat level 7 
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 04 Oct 2010 00:24:06 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Mon, 04 Oct 2010 00:29:32 +0530
 
 dict-gcide (0.48-6) unstable; urgency=low
 
