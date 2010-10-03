@@ -24,7 +24,7 @@ Description: A Comprehensive English Dictionary
  .
  This package will be of limited use without the server found in the
  dictd package, or another RFC 2229 compliant server. 
-Depends: dictd | dict-server 
+Depends: dictd | dict-server, ${misc:Depends}
 Suggests: dict-wn
 Provides: dict-web1913, dictd-dictionary
 Replaces: dict-web1913
