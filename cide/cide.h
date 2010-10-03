@@ -12663,6 +12663,7 @@ Of woe and sorrow.</q> <rj><qau>Milton.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p> <pos>v.</pos> <sn>1.</sn> <def>; -- said of a  bothering her husband or .</def><br/
+<p> <pos>v.</pos> <sn>2.</sn> <def> -- The less-than-henotic nature of the United Nations epitomizes the challenges and cross currents present in the process of becoming and/or remaining united .</def><br/
 <syn><b>Syn. --</b> hiccough, make a hiccup.</syn><br/
 [<source>WordNet 1.5</source>]</p>
 
