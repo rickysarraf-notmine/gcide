@@ -33971,9 +33971,6 @@ Beyond the <qex>boundaries</qex> of the skies.</q> <rj><qau>N. Cotton.</qau></rj
 <hw>Bour*geois"</hw> <pr>(<?/)</pr>, <pos>n.</pos> <ety>[From a French type founder named <ets>Bourgeois</ets>, or fr. F. <ets>bourgeois</ets> of the middle class; hence applied to an intermediate size of type between brevier and long primer: cf. G. <ets>bourgeois</ets>, <ets>borgis</ets>. Cf. <er>Burgess</er>.]</ety> <fld>(Print.)</fld> <def>A size of type between long primer and brevier. See <er>Type</er>.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><note><hand/ <bourgeoistype>This line is printed in <xex>bourgeois</xex> type.</bourgeoistype></note><br/
-[<source>1913 Webster</source>]</p>
-
 <p><ent>Bourgeois</ent><br/
 ||<hw>Bour*geois"</hw> <pr>(<?/)</pr>, <pos>n.</pos> <ety>[F., fr. <ets>bourg</ets> town; of German origin. See <er>Burgess</er>.]</ety> <def>A man of middle rank in society; one of the shopkeeping class.</def> <mark>[France.]</mark><br/
 [<source>1913 Webster</source>]</p>
@@ -38840,9 +38837,6 @@ On that which <qex>breeds</qex> between them.</q> <rj><qau>Shak.</qau></rj><br/
 <hw>Bre*vier"</hw> <pr>(br<esl/*v<emac/r")</pr>, <pos>n.</pos> <ety>[Prob. from being originally used in printing a <ets>breviary</ets>. See <er>Breviary</er>.]</ety> <fld>(Print.)</fld> <def>A size of type between bourgeois and minion.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><note><hand/ This line is printed in <xex>brevier</xex> type.</note><br/
-[<source>1913 Webster</source>]</p>
-
 <p><ent>Breviloquence</ent><br/
 <hw>Bre*vil"o*quence</hw> <pr>(<?/)</pr>, <pos>n.</pos> <ety>[L. <ets>breviloquentia</ets>.]</ety> <def>A brief and pertinent mode of speaking.</def> <mark>[R.]</mark><br/
 [<source>1913 Webster</source>]</p>
@@ -39907,9 +39901,6 @@ His heaven commences ere world be past.</q> <rj><qau>Goldsmith.</qau></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>2.</sn> <fld>(Print.)</fld> <def>The smallest size of type used in England printing.</def><br/
-[<source>1913 Webster</source>]</p>
-
-<p><note><hand/ This line is printed in the type called Brilliant.</note><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>3.</sn> <def>A kind of cotton goods, figured on the weaving.</def><br/

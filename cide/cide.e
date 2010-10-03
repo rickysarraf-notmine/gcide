@@ -9551,9 +9551,6 @@ All full of fresshe flowers, white and red.</q> <rj><qau>Chaucer.</qau></rj><br/
 <p><sn>2.</sn> <fld>(Print.)</fld> <def>A kind of type, in size between minion and nonpare<?/l. It is used by English printers.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><note> <hand/ This line is printed in the type called <xex>emerald</xex>.</note><br/
-[<source>1913 Webster</source>]</p>
-
 <p><ent>Emerald</ent><br/
 <hw>Em"er*ald</hw>, <pos>a.</pos> <def>Of a rich green color, like that of the emerald.</def> <ldquo/<xex>Emerald</xex> meadows.<rdquo/  <rj><au>Byron.</au></rj><br/
 [<source>1913 Webster</source>]</p>

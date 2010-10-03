@@ -11253,9 +11253,6 @@ Vouchsafed or sought.</q> <rj><qau>Milton.</qau></rj><br/
 <p><sn>2.</sn> <ety>[F. <ets>nonpareille</ets>.]</ety> <fld>(Print.)</fld> <def>A size of type next smaller than <xex>minion</xex> and next larger than <xex>agate</xex> (or <xex>ruby</xex>).</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><note><hand/ <nonpareiltype>This line is printed in the type called <ex>nonpareil</ex>.</nonpareiltype></note><br/
-[<source>1913 Webster</source>]</p>
-
 <p><sn>3.</sn> <fld>(Zool.)</fld> <sd>(a)</sd> <def>A beautifully colored finch (<spn>Passerina ciris</spn>), native of the Southern United States.  The male has the head and neck deep blue, rump and under parts bright red, back and wings golden green, and the tail bluish purple.  Called also <altname>painted bunting</altname> and <altname>painted finch</altname>.</def> <sd>(b)</sd> <def>Any other similar bird of the same genus.</def><br/
 [<source>1913 Webster</source> <source>+PJC</source>]</p>
 

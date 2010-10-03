@@ -22975,9 +22975,6 @@ immortal <qex>longings</qex> in me.</q> <rj><qau>Shak.</qau></rj><br/
 <hw>Long" prim"er</hw> <pr>(?)</pr> <pos>n.</pos> <fld>(Print.)</fld> <def>A kind of type, in size between small pica and bourgeois.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><note><hand/ <longprimertype>This line is printed in <it>long primer</it>.</longprimertype></note><br/
-[<source>1913 Webster</source>]</p>
-
 <p><ent>long-range</ent><br/
 <hw>long-range</hw> <pos>adj.</pos> <sn>1.</sn> <def>involving an extended span of time; -- of plans, goals, or predictions; <as>as, <ex>long-range</ex> goals; a <ex>long-range</ex> weather forecast</as>.</def><br/
 [<source>WordNet 1.5</source> <source>+PJC</source>]</p>

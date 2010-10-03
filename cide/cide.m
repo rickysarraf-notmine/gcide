@@ -25812,9 +25812,6 @@ Voiced so regardfully?</q> <rj><qau>Shak.</qau></rj><br/
 <p><sn>3.</sn> <fld>(Print.)</fld> <def>A small kind of type, in size between brevier and nonpareil.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><hand/ <miniontype>This line is printed in <it>minion</it> type.</miniontype><br/
-[<source>1913 Webster</source>]</p>
-
 <p><sn>4.</sn> <def>An ancient form of ordnance, the caliber of which was about three inches.</def> <mark>[Obs.]</mark>  <rj><au>Beau. & Fl.</au></rj><br/
 [<source>1913 Webster</source>]</p>
 
