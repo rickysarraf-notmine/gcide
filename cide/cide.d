@@ -43455,7 +43455,7 @@ Of plagues.</q> <rj><qau>Marston.</qau></rj><br/
 <p><sn>3.</sn> <def>A close-fitting garment for men, covering the body from the neck to the waist or a little below. It was worn in Western Europe from the 15th to the 17th century.</def><br/
 [<source>1913 Webster</source>]</p>
 
-<p><sn>4.</sn> <fld>(Lapidary Work)</fld> <def>A counterfeit gem, composed of two pieces of crystal, with a color them, and thus giving the appearance of a naturally colored gem. Also, a piece of paste or glass covered by a veneer of real stone.</def><br/
+<p><sn>4.</sn> <fld>(Lapidary Work)</fld> <def>A counterfeit gem, composed of two pieces of crystal, with a layer of color between them, and thus giving the appearance of a naturally colored gem. Also, a piece of paste or glass covered by a veneer of real stone.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><sn>5.</sn> <fld>(Opt.)</fld> <def>An arrangement of two lenses for a microscope, designed to correct spherical aberration and chromatic dispersion, thus rendering the image of an object more clear and distinct.</def>  <rj><au>W. H. Wollaston.</au></rj><br/
