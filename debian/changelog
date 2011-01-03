@@ -1,3 +1,10 @@
+dict-gcide (0.48-8) experimental; urgency=low
+
+  * Drop quilt build dependency. Conversion to 3.0 (quilt) format
+    autocovers it
+
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 04 Jan 2011 00:08:27 +0545
+
 dict-gcide (0.48-7) experimental; urgency=low
 
   * Take maintenance of this package (Closes: #436119)
