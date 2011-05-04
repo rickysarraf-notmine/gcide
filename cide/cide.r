@@ -12368,7 +12368,7 @@ Soon dried, and on the <qex>reeking</qex> moisture fed.</q> <rj><qau>Milton.</qa
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Reeve</ent><br/
-<hw>Reeve</hw>, <pos>v. t.</pos> <vmorph>[<pos>imp. & p. p.</pos> <conjf>Rove</conjf> <pr>(r<omac/v)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>Reeving</conjf>.]</vmorph> <ety>[Cf. D. <ets>reven</ets>. See <er>Reef</er>, <pos>n.</pos> & <pos>v. t.</pos>]</ety> <fld>(Naut.)</fld> <def>To pass, as the end of a pope, through any hole in a block, thimble, cleat, ringbolt, cringle, or the like.</def><br/
+<hw>Reeve</hw>, <pos>v. t.</pos> <vmorph>[<pos>imp. & p. p.</pos> <conjf>Rove</conjf> <pr>(r<omac/v)</pr>; <pos>p. pr. & vb. n.</pos> <conjf>Reeving</conjf>.]</vmorph> <ety>[Cf. D. <ets>reven</ets>. See <er>Reef</er>, <pos>n.</pos> & <pos>v. t.</pos>]</ety> <fld>(Naut.)</fld> <def>To pass, as the end of a rope, through any hole in a block, thimble, cleat, ringbolt, cringle, or the like.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Reeve</ent><br/
