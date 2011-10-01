@@ -59,6 +59,10 @@ configure: stamp-configure
 stamp-configure:
 	./configure --verbose --prefix=$(PREFIX) && touch stamp-configure
 
+build: build-indep build-arch
+
+build-indep: stamp-build
+build-arch: stamp-build
 
 stamp-build:
 # Builds the binary package.
