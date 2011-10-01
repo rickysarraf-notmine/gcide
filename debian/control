@@ -11,7 +11,7 @@ Homepage: http://git.debian.org/?p=collab-maint/dict-gcide.git
 
 Package: dict-gcide
 Architecture: all 
-Description: A Comprehensive English Dictionary
+Description: Comprehensive English Dictionary
  This package contains the GNU version of the Collaborative
  International Dictionary of English, formatted for use by the
  dictionary server in the dictd package.  The GCIDE contains the
