@@ -103,7 +103,7 @@ stamp-binary-indep:
 	$(MAKE)              install dictdir=$(DICTDIR)
 	$(install_program)   debian/postinst debian/$(pkg1)/DEBIAN/
 	$(install_program)   debian/postrm debian/$(pkg1)/DEBIAN/
-	$(install_file)      presubj \
+	$(install_file)      debian/presubj \
 			       debian/$(pkg1)/usr/share/bug/$(pkg1)/presubj
 	$(install_file)      ChangeLog \
 			       debian/$(pkg1)/usr/share/doc/$(pkg1)/changelog
