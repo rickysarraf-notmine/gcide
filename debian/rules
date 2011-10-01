@@ -99,9 +99,12 @@ stamp-binary-indep:
 	$(make_directory)    debian/$(pkg1)/DEBIAN
 	$(make_directory)    debian/$(pkg1)/usr/share/dictd
 	$(make_directory)    debian/$(pkg1)/usr/share/doc/$(pkg1)
+	$(make_directory)    debian/$(pkg1)/usr/share/bug/$(pkg1)
 	$(MAKE)              install dictdir=$(DICTDIR)
 	$(install_program)   debian/postinst debian/$(pkg1)/DEBIAN/
 	$(install_program)   debian/postrm debian/$(pkg1)/DEBIAN/
+	$(install_file)      presubj \
+			       debian/$(pkg1)/usr/share/bug/$(pkg1)/presubj
 	$(install_file)      ChangeLog \
 			       debian/$(pkg1)/usr/share/doc/$(pkg1)/changelog
 	$(install_file)      debian/changelog \
