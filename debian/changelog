@@ -1,4 +1,4 @@
-dict-gcide (0.49) unstable; urgency=low
+dict-gcide (0.48.1) unstable; urgency=low
 
   * Switch the package source format to 3.0 (native)
     GCIDE has no active upstream. Given the wealth of information this
@@ -8,7 +8,7 @@ dict-gcide (0.49) unstable; urgency=low
   * [62e2349] Bump Standards Version to 3.9.2 (No changes required)
   * [345eff8] add presubj file explaining bug reporting guildeline
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 01 Oct 2011 15:02:02 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 01 Oct 2011 15:18:30 +0530
 
 dict-gcide (0.48-8) unstable; urgency=low
 
