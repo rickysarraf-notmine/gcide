@@ -261,7 +261,7 @@ void comment( const char *text, int length )
       fmt_add_index( "00-database-short" );
       if (database == 1) {
 	 fmt_add_index( "00-gcide-short" );
-	 fmt_string( "The Collaborative International Dictionary of English v.0.48" );
+	 fmt_string( "The Collaborative International Dictionary of English v.0.48.1" );
       } else {
 	 fmt_add_index( "00-web1913-short" );
 	 fmt_string( "Webster's Revised Unabridged Dictionary (1913)" );
