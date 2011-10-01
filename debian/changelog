@@ -6,8 +6,9 @@ dict-gcide (0.49) unstable; urgency=low
     (Closes: #643090)
   * [e2d199e] add build-indep and build-arch targets
   * [62e2349] Bump Standards Version to 3.9.2 (No changes required)
+  * [345eff8] add presubj file explaining bug reporting guildeline
 
- -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 01 Oct 2011 14:30:20 +0530
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Sat, 01 Oct 2011 15:02:02 +0530
 
 dict-gcide (0.48-8) unstable; urgency=low
 
