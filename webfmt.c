@@ -28,6 +28,10 @@
 extern int        yy_flex_debug;
        int        database = 0;
 
+extern FILE       *yyin;
+
+static int        _prs_debug_flag   = 0;
+
 static const char *id_string( const char *id )
 {
    static char buffer[256];
@@ -102,6 +106,19 @@ static void help( void )
 
    banner();
    while (*p) fprintf( stderr, "%s\n", *p++ );
+}
+
+void prs_set_debug( int debug_flag )
+{
+   _prs_debug_flag = debug_flag;
+}
+
+void prs_stream( FILE *str, const char *name )
+{
+   yyin = str;
+   src_new_file( name );
+   yydebug = _prs_debug_flag;
+   yyparse();
 }
 
 int main( int argc, char **argv )
