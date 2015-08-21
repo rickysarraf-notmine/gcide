@@ -32959,7 +32959,7 @@ obscurity: it is the <qex>frost</qex> smoke of arctic winters.</q> <rj><qau>Kane
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Froward</ent><br/
-<hw>Fro"ward</hw> <pr>(?)</pr>, <pos>a.</pos> <ety>[<ets>Fro</ets> + <ets>-ward</ets>. See <er>Fro</er>, and cf. <er>Fromward</er>.]</ety> <def>Not willing to yield or compIy with what is required or is reasonable; perverse; disobedient; peevish; <as>as, a <ex>froward</ex> child</as>.</def><br/
+<hw>Fro"ward</hw> <pr>(?)</pr>, <pos>a.</pos> <ety>[<ets>Fro</ets> + <ets>-ward</ets>. See <er>Fro</er>, and cf. <er>Fromward</er>.]</ety> <def>Not willing to yield or comply with what is required or is reasonable; perverse; disobedient; peevish; <as>as, a <ex>froward</ex> child</as>.</def><br/
 [<source>1913 Webster</source>]</p>
 
 <p><q>A <qex>froward</qex> man soweth strife.</q> <rj><qau>Prov. xvi. 28.</qau></rj><br/
