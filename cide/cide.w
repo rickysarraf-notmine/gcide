@@ -11500,8 +11500,8 @@ Should have been cherished by her childlike duty.</q> <rj><qau>Shak.</qau></rj><
 <hw>Where"fore</hw>, <pos>n.</pos> <def>the reason why.</def>  <mark>[Colloq.]</mark><br/
 [<source>1913 Webster</source>]</p>
 
-<p><ent>Whereform</ent><br/
-<hw>Where*form"</hw> <pr>(?)</pr>, <pos>adv.</pos> <ety>[<ets>Where</ets> + <ets>from</ets>.]</ety> <def>From which; from which or what place.</def>  <rj><au>Tennyson.</au></rj><br/
+<p><ent>Wherefrom</ent><br/
+<hw>Where*from"</hw> <pr>(?)</pr>, <pos>adv.</pos> <ety>[<ets>Where</ets> + <ets>from</ets>.]</ety> <def>From which; from which or what place.</def>  <rj><au>Tennyson.</au></rj><br/
 [<source>1913 Webster</source>]</p>
 
 <p><ent>Wherein</ent><br/
