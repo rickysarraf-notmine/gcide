@@ -111,7 +111,7 @@ stamp-binary-indep:
 			       debian/$(pkg1)/usr/share/doc/$(pkg1)/changelog.Debian
 	$(install_file)      cide/README.dic \
 			       debian/$(pkg1)/usr/share/doc/$(pkg1)/README.dictionary
-	gzip -9frq           debian/$(pkg1)/usr/share/doc/$(pkg1)/
+	gzip -9frqn          debian/$(pkg1)/usr/share/doc/$(pkg1)/
 # Make sure the copyright file is not compressed
 	$(install_file)      debian/copyright \
 	                     debian/$(pkg1)/usr/share/doc/$(pkg1)/copyright

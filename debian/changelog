@@ -1,3 +1,13 @@
+dict-gcide (0.48.2) unstable; urgency=medium
+
+  * Update debian/control VCS fields to use https.
+  * Drop optional Build-Depends on ancient dictd.
+  * Simplify postinst and postrm, fixes a lintian warning.
+  * Reproducible builds: avoid storing timestamp with gzip files.
+  * Avoid using convenience copy of libmaa (Closes: #775140)
+
+ -- Edward Betts <edward@4angle.com>  Sun, 26 Jun 2016 07:46:18 +0100
+
 dict-gcide (0.48.1) unstable; urgency=low
 
   * Switch the package source format to 3.0 (native)

@@ -5,19 +5,11 @@ set -e
 PACKAGE=dict-gcide
 
 case "$1" in 
-     configure)
-     if [ -x /usr/sbin/dictdconfig ]; then dictdconfig -w ;fi
-     if [ -x /etc/init.d/dictd ]; then
-          if which invoke-rc.d >/dev/null 2>&1; then
-               invoke-rc.d dictd restart
-          else
-               /etc/init.d/dictd restart
-          fi
-     fi
-
-     exit 0
-     ;;
-
+    configure)
+        dictdconfig -w
+        invoke-rc.d dictd restart
+        exit 0
+    ;;
 
     failed-upgrade|abort-upgrade|abort-remove|abort-deconfigure|in-favour|removing)
         exit 0;
