@@ -1,12 +1,24 @@
 dict-gcide (0.48.2) unstable; urgency=medium
 
+  [ Ritesh Raj Sarraf ]
+  * [345eff8] add presubj file explaining bug reporting guildeline
+  * [16154c1] Use the libmaa-dev library.
+    Thanks to Edward Betts (Closes: #775140)
+  * [d859b26] Fix definition of Froward and Comply.
+    Thanks to Edward Betts (Closes: #772083)
+  * [95589d9] Fix spelling for word Wherefrom.
+    Thanks to Carlos Maddela (Closes: #740962)
+  * [dd916c5] Bump debhelper compat to 9 and Standards Version to 3.9.8
+
+  [ Edward Betts ]
+  * [c6f994f] Tidy dict-gcide package, switch to system libmaa
   * Update debian/control VCS fields to use https.
   * Drop optional Build-Depends on ancient dictd.
   * Simplify postinst and postrm, fixes a lintian warning.
   * Reproducible builds: avoid storing timestamp with gzip files.
-  * Avoid using convenience copy of libmaa (Closes: #775140)
+  * Avoid using convenience copy of libmaa
 
- -- Edward Betts <edward@4angle.com>  Sun, 26 Jun 2016 07:46:18 +0100
+ -- Ritesh Raj Sarraf <rrs@debian.org>  Tue, 02 Aug 2016 18:42:27 +0530
 
 dict-gcide (0.48.1) unstable; urgency=low
 
